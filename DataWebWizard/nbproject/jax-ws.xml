@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="Login">
+      <implementation-class>soapservices.Login</implementation-class>
+    </service>
+    <service name="CreateTable">
+      <implementation-class>soapservices.CreateTable</implementation-class>
+    </service>
+    <service name="UpdateTable">
+      <implementation-class>soapservices.UpdateTable</implementation-class>
+    </service>
+    <service name="ConsultTable">
+      <implementation-class>soapservices.ConsultTable</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

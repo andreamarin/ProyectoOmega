@@ -1,0 +1,52 @@
+2019/04/24 20:34:17
+Base de datos: llanda_luisfe
+Conexión exitosa
+Query: CREATE TABLE miSextaTabla(blah varchar(1) NOT NULL PRIMARY KEY,bleh int,hm boolean)
+INSERT INTO FIELDS VALUES('blah','varchar','miSextaTabla','llanda',1',1)
+0
+2019/04/24 20:36:18
+Base de datos: llanda_luisfe
+Conexión exitosa
+Query: CREATE TABLE miPrimeraTabla(blah varchar(1) NOT NULL PRIMARY KEY,bleh int,hm boolean)
+FIELDS QUERYS
+INSERT INTO FIELDS VALUES('blah','varchar','miPrimeraTabla','llanda',1',1)
+
+
+2019/04/24 20:37:46
+Base de datos: llanda_luisfe
+Conexión exitosa
+Query: CREATE TABLE miPrimeraTabla(blah varchar(1) NOT NULL PRIMARY KEY,bleh int,hm boolean)
+FIELDS QUERYS
+INSERT INTO FIELDS VALUES('blah','varchar','miPrimeraTabla','llanda',1,1)
+INSERT INTO FIELDS VALUES('bleh','int','miPrimeraTabla','llanda',null,0)
+INSERT INTO FIELDS VALUES('hm','boolean','miPrimeraTabla','llanda',null,0)
+
+
+2019/04/25 17:17:06
+Conexión exitosa a la bd: llanda_luisfe
+INSERT INTO miPrimeraTablaVALUES('3',10,false)
+ERROR SQLException java.sql.SQLSyntaxErrorException: Error de sintaxis: Encountered "\'3\'" at line 1, column 34.
+ERROR CODE 30000
+ERROR STATE 42X01
+
+2019/04/25 17:17:53
+Conexión exitosa a la bd: llanda_luisfe
+INSERT INTO miPrimeraTabla VALUES('3',10,false)
+RESPUESTA: 1
+
+2019/04/25 17:26:02
+Conexión exitosa a la bd: llanda_luisfe
+DELETE FROM miPrimeraTabla WHERE blah=3
+ERROR SQLException java.sql.SQLSyntaxErrorException: No están soportadas las comparaciones entre 'VARCHAR (UCS_BASIC)' y 'INTEGER'. Los tipos deben ser comparables. Además, los tipos de cadena también deben tener una intercalación coincidente. Si la intercalación no coincide, una posible solución es convertir los operandos para forzarlos a la intercalación por defecto (por ejemplo: SELECT tablename FROM sys.systables WHERE CAST(tablename AS VARCHAR(128)) = 'T1')
+ERROR CODE 30000
+ERROR STATE 42818
+
+2019/04/25 17:27:16
+Conexión exitosa a la bd: llanda_luisfe
+DELETE FROM miPrimeraTabla WHERE blah='3'
+RESPUESTA: 1
+
+2019/04/25 17:37:10
+Conexión exitosa a la bd: llanda_luisfe
+UPDATE miPrimeraTabla SET bleh = 15 WHERE blah = '1'
+RESPUESTA: 1
