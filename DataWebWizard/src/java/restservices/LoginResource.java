@@ -15,7 +15,18 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PUT;
+import javax.ws.rs.QueryParam;
 import returns.Response;
+import java.util.ArrayList;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.UriInfo;
+import javax.ws.rs.Produces;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.FormParam;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PUT;
+import javax.ws.rs.core.MediaType;
 
 /**
  * REST Web Service
@@ -33,19 +44,19 @@ public class LoginResource {
      */
     public LoginResource() {
     }
-
+    
+    
     /**
      * Retrieves representation of an instance of restservices.LoginResource
      * @return an instance of java.lang.String
      */
+    
     @POST
-    @Produces("MediaType.APPLICATION_XML")
-    public Response login(){//@FormParam("username")String username, @FormParam("password")String password) {
+    @Produces(MediaType.APPLICATION_XML)
+    public Response login(@FormParam("username")String username, @FormParam("password")String password) {
         soapclients.Login_Service service = new soapclients.Login_Service();
         soapclients.Login port = service.getLoginPort();
-        //boolean res =  port.login(username, password);
-        Response res = new Response(true);
-        return res;
+        return new Response(port.login(username, password));
     }
 
 }

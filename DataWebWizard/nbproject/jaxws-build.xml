@@ -69,8 +69,8 @@
     </target>
     <target name="wsimport-client-Login" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/Login"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Login" destdir="${build.generated.dir}/jax-wsCache/Login" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Login/wsdl/10.4.65.14_8080/Login/Login.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://10.4.65.14:8080/Login/Login?WSDL" xnocompile="true" xendorsed="true" package="soapclients">
-            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Login/wsdl/10.4.65.14_8080/Login/Login.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Login" destdir="${build.generated.dir}/jax-wsCache/Login" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Login/wsdl/localhost_8080/Login/Login.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Login/Login?WSDL" xnocompile="true" xendorsed="true" package="soapclients">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Login/wsdl/localhost_8080/Login/Login.wsdl"/>
             <produces dir="${build.generated.dir}/jax-wsCache/Login"/>
         </wsimport>
         <copy todir="${build.generated.sources.dir}/jax-ws">
