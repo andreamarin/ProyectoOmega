@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://10.4.65.14:8080/Login/Login?WSDL" uri="src/conf/xml-resources/web-service-references/Login/wsdl/10.4.65.14_8080/Login/Login.wsdl"/>
+    <system systemId="http://10.4.65.14:8080/Login/Login?xsd=1" uri="src/conf/xml-resources/web-service-references/Login/wsdl/10.4.65.14_8080/Login/Login.xsd_1.xsd"/>
+</catalog>

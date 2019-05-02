@@ -46,12 +46,11 @@ public class ConsultTable {
         } catch (IOException ex) {
             Logger.getLogger(CreateTable.class.getName()).log(Level.SEVERE, null, ex);
         }
-        logger.println("======================================================================================================");
+        logger.println("=================================================================================================");
         logger.println("\n" + dateFormat.format(date) + "CONSULT TABLE");
         try {
             Class.forName("org.apache.derby.jdbc.ClientDriver");
             Connection admin = DriverManager.getConnection("jdbc:derby://localhost:1527/admin","root","root");
-            
             Statement query = admin.createStatement();
             String query_str = "SELECT PASSWORD, DBNAME FROM USERS WHERE USERNAME = '"+username+"'";
             
@@ -70,7 +69,9 @@ public class ConsultTable {
             
             rs = query.executeQuery(query_str);
             
-            res = ResultSetToArray(rs);
+            res = ResultSetToArray(rs, logger);
+            
+            logger.println("Éxito");
             
             admin.close();
             con.close();
@@ -89,16 +90,72 @@ public class ConsultTable {
         return res;
     }
     
-    private Object[][] ResultSetToArray(ResultSet rs){
+     @WebMethod(operationName = "getFields")
+    public Object[][] getFields(@WebParam(name = "tableName") String tableName, @WebParam(name = "username") String username){
+        String db = "", pswd = "";
+        Object[][] res = null;
+        
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+	Date date = new Date();
+        
+        PrintWriter logger = null;
+        try {
+            logger = new PrintWriter(new FileWriter("/Users/andreamarin/Desktop/ITAM/8semestre/ProyectosSD/ProyectoOmega/status.txt",true));
+        } catch (IOException ex) {
+            Logger.getLogger(CreateTable.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        logger.println("================================================================================================");
+        logger.println("\n" + dateFormat.format(date) + "GET FIELDS");
+        try {
+            Class.forName("org.apache.derby.jdbc.ClientDriver");
+            Connection admin = DriverManager.getConnection("jdbc:derby://localhost:1527/admin","root","root");
+            
+            Statement query = admin.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+            String query_str = "SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS "
+                    + "WHERE USERNAME = '" + username + "' AND TABLE_NAME = '" + tableName + "'";
+            
+            ResultSet rs = query.executeQuery(query_str);
+            
+            res = ResultSetToArray(rs, logger);
+            logger.println("Éxito");
+            admin.close();
+            
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(UpdateTable.class.getName()).log(Level.SEVERE, null, ex);
+            logger.println("ERROR ClassNotFoundException "+ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(UpdateTable.class.getName()).log(Level.SEVERE, null, ex);
+            logger.println("ERROR SQLException "+ex);
+            logger.println("ERROR CODE "+ex.getErrorCode());
+            logger.println("ERROR STATE "+ex.getSQLState());
+        }
+        
+        logger.close();
+        return res;
+    }
+    
+    private Object[][] ResultSetToArray(ResultSet rs, PrintWriter logger){
         Object data[][]  = null;
         try{
            rs.last();
            ResultSetMetaData rsmd = rs.getMetaData();
            int numCols = rsmd.getColumnCount();
            int numRows = rs.getRow();
-           data = new Object[numRows][numCols];
            
-           int j = 0;
+           logger.println("Numero de filas: " + numRows);
+           logger.println("Numero de columnas: " + numCols);
+           
+           if (numRows == 0){
+               return null;
+           }
+           
+           data = new Object[numRows + 1][numCols];
+           
+            for (int i = 0; i < numCols; i++) {
+                data[0][i] = rsmd.getColumnName(i);
+            }
+           
+           int j = 1;
            rs.beforeFirst();
            while(rs.next()){
                for (int i = 0; i < numCols; i++) {

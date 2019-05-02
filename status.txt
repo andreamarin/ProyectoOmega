@@ -50,3 +50,60 @@ RESPUESTA: 1
 Conexión exitosa a la bd: llanda_luisfe
 UPDATE miPrimeraTabla SET bleh = 15 WHERE blah = '1'
 RESPUESTA: 1
+======================================================================================================
+
+2019/04/25 19:45:54 GET FIELDS
+Éxito
+======================================================================================================
+
+2019/04/25 19:46:11 GET FIELDS
+Éxito
+======================================================================================================
+
+2019/04/25 19:46:54GET FIELDS
+Éxito
+======================================================================================================
+
+2019/04/25 19:47:36 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+ERROR SQLException java.sql.SQLSyntaxErrorException: La tabla/vista 'MIASKLDALDJKSATABLA' no existe.
+ERROR CODE 30000
+ERROR STATE 42X05
+======================================================================================================
+
+2019/04/25 19:47:50 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+ERROR SQLException java.sql.SQLSyntaxErrorException: La tabla/vista 'MIASKLDALDJKSATABLA' no existe.
+ERROR CODE 30000
+ERROR STATE 42X05
+======================================================================================================
+
+2019/04/25 19:52:49GET FIELDS
+Numero de filas: 0
+Numero de columnas: 4
+Éxito
+======================================================================================================
+
+2019/04/25 19:54:42GET FIELDS
+Numero de filas: 0
+Numero de columnas: 4
+Éxito
+======================================================================================================
+
+2019/04/25 19:54:55GET FIELDS
+Numero de filas: 0
+Numero de columnas: 4
+Éxito
+======================================================================================================
+
+2019/04/25 19:55:00GET FIELDS
+Numero de filas: 3
+Numero de columnas: 4
+Éxito
+======================================================================================================
+
+2019/04/25 19:55:09CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Numero de filas: 1
+Numero de columnas: 3
+Éxito
