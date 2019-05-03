@@ -69,8 +69,8 @@
     </target>
     <target name="wsimport-client-Login" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/Login"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Login" destdir="${build.generated.dir}/jax-wsCache/Login" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Login/wsdl/10.6.74.235_8080/Login/Login.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Login/Login?WSDL" xnocompile="true" xendorsed="true" package="soapclients">
-            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Login/wsdl/10.6.74.235_8080/Login/Login.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Login" destdir="${build.generated.dir}/jax-wsCache/Login" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Login/wsdl/localhost_8080/Login/Login.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Login/Login?WSDL" xnocompile="true" xendorsed="true" package="soapclients">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Login/wsdl/localhost_8080/Login/Login.wsdl"/>
             <produces dir="${build.generated.dir}/jax-wsCache/Login"/>
         </wsimport>
         <copy todir="${build.generated.sources.dir}/jax-ws">
@@ -83,5 +83,53 @@
         <delete dir="${build.generated.sources.dir}/jax-ws/soapclients"/>
         <delete dir="${build.generated.dir}/jax-wsCache/Login"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-Login"/>
+    <target name="wsimport-client-ConsultTable" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ConsultTable"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ConsultTable" destdir="${build.generated.dir}/jax-wsCache/ConsultTable" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/ConsultTable/wsdl/10.6.74.235_8080/ConsultTable/ConsultTable.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://10.6.74.235:8080/ConsultTable/ConsultTable?WSDL" xnocompile="true" xendorsed="true" package="deffffsoap">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/ConsultTable/wsdl/10.6.74.235_8080/ConsultTable/ConsultTable.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ConsultTable"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ConsultTable">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ConsultTable" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/deffffsoap"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/ConsultTable"/>
+    </target>
+    <target name="wsimport-client-CreateTable" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/CreateTable"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CreateTable" destdir="${build.generated.dir}/jax-wsCache/CreateTable" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/CreateTable/wsdl/localhost_8080/CreateTable/CreateTable.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/CreateTable/CreateTable?WSDL" xnocompile="true" xendorsed="true" package="create">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/CreateTable/wsdl/localhost_8080/CreateTable/CreateTable.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/CreateTable"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CreateTable">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-CreateTable" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/create"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/CreateTable"/>
+    </target>
+    <target name="wsimport-client-UpdateTable" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/UpdateTable"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/UpdateTable" destdir="${build.generated.dir}/jax-wsCache/UpdateTable" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/UpdateTable/wsdl/10.6.74.235_8080/UpdateTable/UpdateTable.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://10.6.74.235:8080/UpdateTable/UpdateTable?WSDL" xnocompile="true" xendorsed="true" package="soapupdate">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/UpdateTable/wsdl/10.6.74.235_8080/UpdateTable/UpdateTable.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/UpdateTable"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/UpdateTable">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-UpdateTable" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/soapupdate"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/UpdateTable"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-Login, wsimport-client-ConsultTable, wsimport-client-CreateTable, wsimport-client-UpdateTable"/>
 </project>

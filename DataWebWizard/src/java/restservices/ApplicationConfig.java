@@ -30,6 +30,9 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(restservices.LoginResource.class);
+        resources.add(restservices.SignupResource.class);
+        resources.add(restservices.TableManagerResource.class);
+        resources.add(restservices.TableQuery.class);
     }
     
 }

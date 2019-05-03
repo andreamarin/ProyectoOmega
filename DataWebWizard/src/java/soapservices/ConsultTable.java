@@ -16,13 +16,18 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.jws.WebService;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.ejb.Stateless;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 
 /**
  *
@@ -33,9 +38,9 @@ import javax.ejb.Stateless;
 public class ConsultTable {
     
     @WebMethod(operationName = "consult")
-    public Object[][] consult(@WebParam(name = "tableName") String tableName, @WebParam(name = "username") String username){
+    public List<List<String>> consult(@WebParam(name = "tableName") String tableName, @WebParam(name = "username") String username){
         String db = "", pswd = "";
-        Object[][] res = null;
+        List<List<String>> res = null;
         
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 	Date date = new Date();
@@ -70,7 +75,7 @@ public class ConsultTable {
             rs = query.executeQuery(query_str);
             
             res = ResultSetToArray(rs, logger);
-            
+            logger.println(res.toString());
             logger.println("Éxito");
             
             admin.close();
@@ -87,13 +92,14 @@ public class ConsultTable {
         }
         
         logger.close();
+        
         return res;
     }
     
      @WebMethod(operationName = "getFields")
-    public Object[][] getFields(@WebParam(name = "tableName") String tableName, @WebParam(name = "username") String username){
+    public List<List<String>> getFields(@WebParam(name = "tableName") String tableName, @WebParam(name = "username") String username){
         String db = "", pswd = "";
-        Object[][] res = null;
+        List<List<String>> res = null;
         
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 	Date date = new Date();
@@ -134,40 +140,47 @@ public class ConsultTable {
         return res;
     }
     
-    private Object[][] ResultSetToArray(ResultSet rs, PrintWriter logger){
-        Object data[][]  = null;
+    private List<List<String>> ResultSetToArray(ResultSet rs, PrintWriter logger){
+        List<List<String>> table = new ArrayList<>();
+        String[] colNames;
         try{
-           rs.last();
-           ResultSetMetaData rsmd = rs.getMetaData();
-           int numCols = rsmd.getColumnCount();
-           int numRows = rs.getRow();
+            rs.last();
+            ResultSetMetaData rsmd = rs.getMetaData();
+            int numCols = rsmd.getColumnCount();
+            int numRows = rs.getRow();
            
-           logger.println("Numero de filas: " + numRows);
-           logger.println("Numero de columnas: " + numCols);
+            colNames = new String[numCols];
            
-           if (numRows == 0){
+            logger.println("Número de filas: " + numRows);
+            logger.println("Número de columnas: " + numCols);
+           
+            if (numRows == 0){
+               logger.print("Return null");
                return null;
-           }
-           
-           data = new Object[numRows + 1][numCols];
-           
-            for (int i = 0; i < numCols; i++) {
-                data[0][i] = rsmd.getColumnName(i);
             }
-           
-           int j = 1;
-           rs.beforeFirst();
-           while(rs.next()){
-               for (int i = 0; i < numCols; i++) {
-                   data[j][i] = rs.getObject(i+1);
-               }
-               j++;
-           }
+            
+            List<String> header = new ArrayList<>();
+            for (int i = 1; i <= numCols; i++) {
+                logger.print(rsmd.getColumnName(i));
+                 header.add(rsmd.getColumnName(i));
+            }
+            table.add(header);
+            
+            rs.beforeFirst();
+            while(rs.next()){
+                List<String> row = new ArrayList<>();   
+               
+                for (int i = 0; i < numCols; i++) {
+                    row.add(rs.getObject(i+1).toString());
+                }
+                table.add(row);       
+            }       
         }catch(Exception e){
+            logger.println("ERROR: "+e);
             System.out.println(e);
         }
         
-        return data;
+        return table;
     }
 
 }

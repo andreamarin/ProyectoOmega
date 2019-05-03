@@ -13,14 +13,20 @@
 
 # Servicios REST
 
-* Login 
-* Signup
-* Create table
-* Insert table
-* Update table
-* Delete table
-* Consult table —> json
-* Consult fields —> json
+* Login —> xml POST  **:)**
+* Signup —> xml POST **:)**
+
+
+
+* Create table —> xml POST
+* Insert table —> json PUT
+* Update table —> xml GET
+* Delete table —> json. DELETE
+
+
+
+* Consult table —> json GET
+* Consult fields —> json GET
 
 ###Avances
 
