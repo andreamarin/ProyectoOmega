@@ -46,7 +46,7 @@ public class TableManagerResource {
     
     @PUT
     @Produces("application/json")
-    public String insert(String tableName,String fields, String username){
+    public String insert(@FormParam("tableName")String tableName, @FormParam("fields")String fields,  @FormParam("username")String username){
         soapupdate.UpdateTable port = getPort();
         JSONObject jsonResponse = new JSONObject();
         jsonResponse.put("response", port.insert(tableName, fields, username));
