@@ -37,6 +37,10 @@ public class SignupResource {
 
     /**
      * Retrieves representation of an instance of restservices.LoginResource
+     * @param username
+     * @param password
+     * @param dbName
+     * @param name
      * @return an instance of java.lang.String
      */
     

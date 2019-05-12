@@ -10,11 +10,13 @@ import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PUT;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import org.json.simple.JSONObject;
 import returns.Response;
@@ -36,28 +38,42 @@ public class TableManagerResource {
     public TableManagerResource() {
     }
 
-    @POST
+    @GET
     @Produces(MediaType.APPLICATION_XML)
-    public Response create(@FormParam("tableName")String tableName, @FormParam("username")String username, @FormParam("fields")String fields){
-        create.CreateTable_Service service = new create.CreateTable_Service();
-        create.CreateTable port = service.getCreateTablePort();
-        return new Response(port.create(tableName, username, fields));
+    public Response update(@QueryParam("tableName")String tableName, @QueryParam("username")String username, @QueryParam("primarykey")String primarykey, @QueryParam("fields")String fields){
+        tableclient.TableManager port = getPort();
+        return new Response(port.update(tableName, fields, primarykey, username));
+    }
+    
+    @DELETE
+    @Produces(MediaType.APPLICATION_XML)
+    public Response delete(@FormParam("tableName")String tableName, @FormParam("username")String username, @FormParam("primarykey")String primarykey){
+        tableclient.TableManager port = getPort();
+        return new Response(port.delete(tableName, primarykey, username));
     }
     
     @PUT
     @Produces("application/json")
-    public String insert(@FormParam("tableName")String tableName, @FormParam("fields")String fields,  @FormParam("username")String username){
-        soapupdate.UpdateTable port = getPort();
+    public String insert(@FormParam("tableName")String tableName,@FormParam("fields")String fields, @FormParam("username")String username){
+        tableclient.TableManager port = getPort();
+        
         JSONObject jsonResponse = new JSONObject();
         jsonResponse.put("response", port.insert(tableName, fields, username));
-        return jsonResponse.toString();
-    }
-
-    private static soapupdate.UpdateTable getPort() {
-        soapupdate.UpdateTable_Service service = new soapupdate.UpdateTable_Service();
-        soapupdate.UpdateTable port = service.getUpdateTablePort();
-        return port;
+        
+        return jsonResponse.toJSONString();
     }
     
+    @POST
+    @Produces(MediaType.APPLICATION_XML)
+    public Response create(@FormParam("tableName")String tableName, @FormParam("username")String username, @FormParam("fields")String fields){
+        tableclient.TableManager port = getPort();
+        return new Response(port.create(tableName, username, fields));
+    }
+    
+    private static tableclient.TableManager getPort() {
+        tableclient.TableManager_Service service = new tableclient.TableManager_Service();
+        tableclient.TableManager port = service.getTableManagerPort();
+        return port;
+    }
 
 }

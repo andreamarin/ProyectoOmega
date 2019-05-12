@@ -1,111 +1,106 @@
-=================================================================================================
 
-2019/05/02 23:56:35CONSULT TABLE
-Conexión exitosa a la bd: llanda_luisfe
-Numero de filas: 2
-Numero de columnas: 3
-continue[]
-Éxito
-=================================================================================================
-
-2019/05/02 23:57:36CONSULT TABLE
-Conexión exitosa a la bd: llanda_luisfe
-Numero de filas: 2
-Numero de columnas: 3
-continue
-ERROR: java.sql.SQLException: La posición de la columna '0' está fuera de rango. El número de columnas de esta sentencia ResultSet es '3'.
-[]
-Éxito
-=================================================================================================
-
-2019/05/02 23:58:26CONSULT TABLE
-Conexión exitosa a la bd: llanda_luisfe
-Numero de filas: 2
-Numero de columnas: 3
-continue
-Columna 0, BLAH
-ERROR: java.sql.SQLException: La posición de la columna '0' está fuera de rango. El número de columnas de esta sentencia ResultSet es '3'.
-[]
-Éxito
-=================================================================================================
-
-2019/05/02 23:59:29CONSULT TABLE
-Conexión exitosa a la bd: llanda_luisfe
-Numero de filas: 2
-Numero de columnas: 3
-continue
-Columna 0, BLAH
-ERROR: java.sql.SQLException: La posición de la columna '0' está fuera de rango. El número de columnas de esta sentencia ResultSet es '3'.
-[]
-Éxito
-=================================================================================================
-
-2019/05/03 00:00:27CONSULT TABLE
-Conexión exitosa a la bd: llanda_luisfe
-Numero de filas: 2
-Numero de columnas: 3
-continue
-Columna 1, BLEH
-Columna 2, HM
-ERROR: java.sql.SQLException: La posición de la columna '4' está fuera de rango. El número de columnas de esta sentencia ResultSet es '3'.
-[]
-Éxito
-=================================================================================================
-
-2019/05/03 00:01:16CONSULT TABLE
-Conexión exitosa a la bd: llanda_luisfe
-Numero de filas: 2
-Numero de columnas: 3
-continue
-Columna 1, BLAH
-Columna 2, BLEH
-Columna 3, HM
-ERROR: java.lang.ArrayIndexOutOfBoundsException: 3
-[]
-Éxito
-=================================================================================================
-
-2019/05/03 00:02:04CONSULT TABLE
-Conexión exitosa a la bd: llanda_luisfe
-Numero de filas: 2
-Numero de columnas: 3
-continue
-Columna 1, BLAH
-Columna 2, BLEH
-Columna 3, HM
-ERROR: java.lang.ArrayIndexOutOfBoundsException: 3
-[]
-Éxito
-=================================================================================================
-
-2019/05/03 00:03:32CONSULT TABLE
-Conexión exitosa a la bd: llanda_luisfe
-Numero de filas: 2
-Numero de columnas: 3
-continue
-Columna 1, 
-BLAHColumna 2, 
-BLEHColumna 3, 
-HMbeforeFirstAfuera whileWhile{BLAH=1}
-{BLEH=15, BLAH=1}
-{BLEH=15, HM=true, BLAH=1}
-1
-While{BLAH=2}
-{BLEH=45, BLAH=2}
-{BLEH=45, HM=true, BLAH=2}
-2
-[{BLEH=15, HM=true, BLAH=1}, {BLEH=45, HM=true, BLAH=2}]
-Éxito
-=================================================================================================
-
-2019/05/03 12:20:30CONSULT TABLE
+22019/05/11 21:03:44 CONSULT TABLE
 Conexión exitosa a la bd: llanda_luisfe
 Número de filas: 2
 Número de columnas: 3
-BLAHBLEHHM[{BLEH=15, HM=true, BLAH=1}, {BLEH=45, HM=true, BLAH=2}]
+BLAH 1
+BLEH 2
+HM 3
+{"table":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"}]}
 Éxito
 
-2019/05/03 13:44:12
+2019/05/11 21:04:14 GET FIELDS
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+ERROR: java.lang.NullPointerException
+
+2019/05/11 21:08:04 GET FIELDS
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: blah
+TYPE: varchar
+LENGTH: 1
+PRIMARYKEY: 1
+NAME: bleh
+TYPE: int
+LENGTH: null
+PRIMARYKEY: 0
+NAME: hm
+TYPE: boolean
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/11 21:57:11 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/11 23:01:34 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: La URL 'jdbc:derby://localhost:1527/' no tiene el formato correcto.
+ERROR CODE 40000
+ERROR STATE XJ028
+
+2019/05/11 23:03:07 GET FIELDS
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: blah
+TYPE: varchar
+LENGTH: 1
+PRIMARYKEY: 1
+NAME: bleh
+TYPE: int
+LENGTH: null
+PRIMARYKEY: 0
+NAME: hm
+TYPE: boolean
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+22019/05/11 23:03:30 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 2
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"}]}
+Éxito
+
+2019/05/11 23:06:38 INSERT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+INSERT INTO miPrimeraTabla VALUES('4',5,true)
+RESPUESTA: 1
+
+2019/05/11 23:07:50 CREATE TABLE
 Base de datos: amarina_midb
 Conexión exitosa
-Query: CREATE TABLE tabla(uno int,dos varchar(3) NOT NULL PRIMARY KEY)
+Query: CREATE TABLE tablaUno(blah varchar(1) NOT NULL PRIMARY KEY,bleh int,hm boolean)
+FIELDS QUERYS
+INSERT INTO FIELDS VALUES('blah','varchar','tablaUno','amarina',1,1)
+INSERT INTO FIELDS VALUES('bleh','int','tablaUno','amarina',null,0)
+INSERT INTO FIELDS VALUES('hm','boolean','tablaUno','amarina',null,0)
+
+
+2019/05/11 23:09:07 DELETE FROM TABLE
+Conexión exitosa a la bd: llanda_luisfe
+DELETE FROM miPrimeraTabla WHERE blah='4'
+RESPUESTA: 1

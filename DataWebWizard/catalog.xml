@@ -2,8 +2,6 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
     <system systemId="http://10.4.65.14:8080/Login/Login?WSDL" uri="src/conf/xml-resources/web-service-references/Login/wsdl/10.4.65.14_8080/Login/Login.wsdl"/>
     <system systemId="http://10.4.65.14:8080/Login/Login?xsd=1" uri="src/conf/xml-resources/web-service-references/Login/wsdl/10.4.65.14_8080/Login/Login.xsd_1.xsd"/>
-    <system systemId="http://localhost:8080/Login/Login?WSDL" uri="src/conf/xml-resources/web-service-references/Login/wsdl/localhost_8080/Login/Login.wsdl"/>
-    <system systemId="http://localhost:8080/Login/Login?xsd=1" uri="src/conf/xml-resources/web-service-references/Login/wsdl/localhost_8080/Login/Login.xsd_1.xsd"/>
     <system systemId="http://10.6.74.235:8080/Login/Login?WSDL" uri="src/conf/xml-resources/web-service-references/Login/wsdl/10.6.74.235_8080/Login/Login.wsdl"/>
     <system systemId="http://10.6.74.235:8080/Login/Login?xsd=1" uri="src/conf/xml-resources/web-service-references/Login/wsdl/10.6.74.235_8080/Login/Login.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/ConsultTable/ConsultTable?WSDL" uri="src/conf/xml-resources/web-service-references/ConsultTable/wsdl/localhost_8080/ConsultTable/ConsultTable.wsdl"/>
@@ -17,4 +15,8 @@
     <system systemId="http://localhost:8080/CreateTable/CreateTable?xsd=1" uri="src/conf/xml-resources/web-service-references/CreateTable/wsdl/localhost_8080/CreateTable/CreateTable.xsd_1.xsd"/>
     <system systemId="http://10.6.74.235:8080/UpdateTable/UpdateTable?WSDL" uri="src/conf/xml-resources/web-service-references/UpdateTable/wsdl/10.6.74.235_8080/UpdateTable/UpdateTable.wsdl"/>
     <system systemId="http://10.6.74.235:8080/UpdateTable/UpdateTable?xsd=1" uri="src/conf/xml-resources/web-service-references/UpdateTable/wsdl/10.6.74.235_8080/UpdateTable/UpdateTable.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/TableManager/TableManager?WSDL" uri="src/conf/xml-resources/web-service-references/TableManager/wsdl/localhost_8080/TableManager/TableManager.wsdl"/>
+    <system systemId="http://localhost:8080/TableManager/TableManager?xsd=1" uri="src/conf/xml-resources/web-service-references/TableManager/wsdl/localhost_8080/TableManager/TableManager.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Login/Login?WSDL" uri="src/conf/xml-resources/web-service-references/Login/wsdl/localhost_8080/Login/Login.wsdl"/>
+    <system systemId="http://localhost:8080/Login/Login?xsd=1" uri="src/conf/xml-resources/web-service-references/Login/wsdl/localhost_8080/Login/Login.xsd_1.xsd"/>
 </catalog>
