@@ -7,23 +7,19 @@ package restservices;
 
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PUT;
 import javax.ws.rs.QueryParam;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 
 /**
  * REST Web Service
  *
  * @author andreamarin
  */
-@Path("query/{username}/{tableName}")
+@Path("query")
 public class TableQuery {
 
     @Context
@@ -37,7 +33,7 @@ public class TableQuery {
     
     @GET
     @Produces("application/json")
-    public String getTable(@PathParam("tableName")String tableName, @PathParam("username")String username) {
+    public String getTable(@QueryParam("tableName")String tableName, @QueryParam("username")String username) {
         tableclient.TableManager port = getPort();
         
         String res = port.consult(tableName, username);
@@ -47,7 +43,7 @@ public class TableQuery {
       
     @POST
     @Produces("application/json")
-    public String getFields(@PathParam("tableName")String tableName, @PathParam("username")String username){
+    public String getFields(@QueryParam("tableName")String tableName, @QueryParam("username")String username){
         tableclient.TableManager port = getPort();
          
         String res = port.getFields(tableName, username);
@@ -57,7 +53,7 @@ public class TableQuery {
     
     @PUT
     @Produces("application/json")
-    public String dbTables(@PathParam("username")String username){
+    public String dbTables(@QueryParam("username")String username){
         tableclient.TableManager port = getPort();
          
         String res = port.getTables(username);
