@@ -4,14 +4,8 @@
     <service name="Login">
       <implementation-class>soapservices.Login</implementation-class>
     </service>
-    <service name="CreateTable">
-      <implementation-class>soapservices.CreateTable</implementation-class>
-    </service>
-    <service name="UpdateTable">
-      <implementation-class>soapservices.UpdateTable</implementation-class>
-    </service>
-    <service name="ConsultTable">
-      <implementation-class>soapservices.ConsultTable</implementation-class>
+    <service name="TableManager">
+      <implementation-class>soapservices.TableManager</implementation-class>
     </service>
   </services>
   <clients>
@@ -51,10 +45,10 @@
         </wsimport-option>
       </wsimport-options>
     </client>
-    <client name="ConsultTable">
-      <wsdl-url>http://10.6.74.235:8080/ConsultTable/ConsultTable?WSDL</wsdl-url>
-      <local-wsdl-file>10.6.74.235_8080/ConsultTable/ConsultTable.wsdl</local-wsdl-file>
-      <package-name forceReplace="true">deffffsoap</package-name>
+    <client name="TableManager">
+      <wsdl-url>http://localhost:8080/TableManager/TableManager?WSDL</wsdl-url>
+      <local-wsdl-file>localhost_8080/TableManager/TableManager.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">tableclient</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <wsimport-options>
         <wsimport-option>
@@ -71,7 +65,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>http://10.6.74.235:8080/ConsultTable/ConsultTable?WSDL</wsimport-option-value>
+          <wsimport-option-value>http://localhost:8080/TableManager/TableManager?WSDL</wsimport-option-value>
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>xnocompile</wsimport-option-name>
@@ -83,79 +77,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>package</wsimport-option-name>
-          <wsimport-option-value>deffffsoap</wsimport-option-value>
-        </wsimport-option>
-      </wsimport-options>
-    </client>
-    <client name="CreateTable">
-      <wsdl-url>http://localhost:8080/CreateTable/CreateTable?WSDL</wsdl-url>
-      <local-wsdl-file>localhost_8080/CreateTable/CreateTable.wsdl</local-wsdl-file>
-      <package-name forceReplace="true">create</package-name>
-      <catalog-file>catalog.xml</catalog-file>
-      <wsimport-options>
-        <wsimport-option>
-          <wsimport-option-name>extension</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>verbose</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>fork</wsimport-option-name>
-          <wsimport-option-value>false</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>http://localhost:8080/CreateTable/CreateTable?WSDL</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xnocompile</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xendorsed</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>package</wsimport-option-name>
-          <wsimport-option-value>create</wsimport-option-value>
-        </wsimport-option>
-      </wsimport-options>
-    </client>
-    <client name="UpdateTable">
-      <wsdl-url>http://10.6.74.235:8080/UpdateTable/UpdateTable?WSDL</wsdl-url>
-      <local-wsdl-file>10.6.74.235_8080/UpdateTable/UpdateTable.wsdl</local-wsdl-file>
-      <package-name forceReplace="true">soapupdate</package-name>
-      <catalog-file>catalog.xml</catalog-file>
-      <wsimport-options>
-        <wsimport-option>
-          <wsimport-option-name>extension</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>verbose</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>fork</wsimport-option-name>
-          <wsimport-option-value>false</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>http://10.6.74.235:8080/UpdateTable/UpdateTable?WSDL</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xnocompile</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xendorsed</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>package</wsimport-option-name>
-          <wsimport-option-value>soapupdate</wsimport-option-value>
+          <wsimport-option-value>tableclient</wsimport-option-value>
         </wsimport-option>
       </wsimport-options>
     </client>

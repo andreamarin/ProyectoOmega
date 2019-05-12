@@ -17,4 +17,6 @@
     <system systemId="http://localhost:8080/CreateTable/CreateTable?xsd=1" uri="wsdl/localhost_8080/CreateTable/CreateTable.xsd_1.xsd"/>
     <system systemId="http://10.6.74.235:8080/UpdateTable/UpdateTable?WSDL" uri="wsdl/10.6.74.235_8080/UpdateTable/UpdateTable.wsdl"/>
     <system systemId="http://10.6.74.235:8080/UpdateTable/UpdateTable?xsd=1" uri="wsdl/10.6.74.235_8080/UpdateTable/UpdateTable.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/TableManager/TableManager?WSDL" uri="wsdl/localhost_8080/TableManager/TableManager.wsdl"/>
+    <system systemId="http://localhost:8080/TableManager/TableManager?xsd=1" uri="wsdl/localhost_8080/TableManager/TableManager.xsd_1.xsd"/>
 </catalog>
