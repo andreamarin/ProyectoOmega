@@ -28,8 +28,8 @@
             <p>Nombre del campo: </p><input type="text" name="campo1" value=""/>
             <p>Tipo</p>
             <select name="Type">
-                <option></option>
-                <option></option>
+                <option>VARCHAR</option>
+                <option>INT</option>
             </select>
             <br>
             <input id ="btn" type="submit" value="Crear tabla" name="create" />

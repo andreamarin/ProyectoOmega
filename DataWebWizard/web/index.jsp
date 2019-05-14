@@ -18,16 +18,16 @@
         <h3>Si ya tienes una cuenta, ingresa tu usuario y contraseña</h3>
         
         
-        <form action='menu.jsp' onsubmit='return validate()'>
+        <form action='Balidar' onsubmit='return validate()'>
             <h5 id="hName">Nombre del usuario</h5>
             <input id="name" type="text" name="name" value="" />
             <h5 id ="hDbName">Nombre de la base</h5>
             <input id="dbName" type="text" name="dbName" value="" />
             <h5>Username</h5>
-            <input type="text" name="username" value="" />
+            <input id="usr" type="text" name="username" value="" />
             <h5>Contraseña</h5>
-            <input type="password" name="password" value="" />
-            <input id="accion" type="submit" value="Regístrate" />
+            <input id="psswrd" type="password" name="password" value="" />
+            <input id="accion" name="accion" type="submit" value="Regístrate" />
             <br>
             <input id="boton" value="Cambiar a Log in" type="button" name="signOrLog" onclick="changeSignUpLogIn()"/>
         </form>
@@ -37,33 +37,24 @@
         
         <script>
             function validate(){
-                /*
-                var ajaxRequest;
-                var target = "";
-                if(document.getElementById('accion').value == 'Regístrate'){
-                    target = 'http://localhost:8080/DataWebWizard/webresources/signup'
-                }else{
-                    target = "http://localhost:8080/DataWebWizard/webresources/login?username=llanda&password=123"
-                }
-                alert(target);
-                if (window.XMLHttpRequest){
-                    ajaxRequest=new XMLHttpRequest();
-                } else { 
-                    ajaxRequest=new ActiveXObject("Microsoft.XMLHTTP");
-                }
-                ajaxRequest.onreadystatechange = function(){
-                    alert(ajaxRequest.readyState);
-                    alert(ajaxRequest.status);
-                    if (ajaxRequest.readyState==4 && (ajaxRequest.status==200)){
-                        alert(ajaxRequest.responseXML);
+                res = false;
+                
+                if(document.getElementById("usr").value != "" && document.getElementById("psswrd").value != ""){
+                    if(document.getElementById("accion").value == "Regístrate"){
+                        res = document.getElementById("name").value != "" && document.getElementById("dbName").value != "";
+                        if(!res){
+                            alert("Llena los campos de nombre de usuario y nombre de base");
+                        }
+                    }else {
+                        res = true;
                     }
+                }else{
+                    alert("llena los campos de usuario y contraseña");
                 }
-                ajaxRequest.open('POST', target, true);
-                ajaxRequest.setRequestHeader("Content-Type", "t<ext/html");
-                ajaxRequest.send(''); 
-                */
-               
-               return true;
+                
+                
+                
+                return res;
             }
             
             function changeSignUpLogIn(){

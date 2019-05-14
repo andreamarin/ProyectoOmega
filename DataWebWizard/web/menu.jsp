@@ -20,10 +20,9 @@
         </select>
         
         <%
-            if(request.getParameter("password") != null && request.getParameter("username") != ""){
-                HttpSession mySession = request.getSession();
-                mySession.setAttribute("user", request.getParameter("username"));
-                mySession.setMaxInactiveInterval(20);
+            HttpSession mySession = request.getSession();
+            if(mySession.getAttribute("user") != null){
+                out.println("<h1>Bienvenido "+mySession.getAttribute("user")+"!</h1>");
             }else{
                 response.sendRedirect("error.jsp");
             }
