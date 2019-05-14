@@ -17,8 +17,8 @@
         <h3>En caso de ser un nuevo usuario, presiona el botón de registrar y llena los datos</h3>
         <h3>Si ya tienes una cuenta, ingresa tu usuario y contraseña</h3>
         
-        <form id ="form" action="http://localhost:8080/DataWebWizard/webresources/signup" method="POST">
-            
+        
+        <form action='menu.jsp' onsubmit='return validate()'>
             <h5 id="hName">Nombre del usuario</h5>
             <input id="name" type="text" name="name" value="" />
             <h5 id ="hDbName">Nombre de la base</h5>
@@ -27,37 +27,70 @@
             <input type="text" name="username" value="" />
             <h5>Contraseña</h5>
             <input type="password" name="password" value="" />
-            <input type="submit" value="Send" />
+            <input id="accion" type="submit" value="Regístrate" />
             <br>
             <input id="boton" value="Cambiar a Log in" type="button" name="signOrLog" onclick="changeSignUpLogIn()"/>
         </form>
         
+
+        
         
         <script>
+            function validate(){
+                /*
+                var ajaxRequest;
+                var target = "";
+                if(document.getElementById('accion').value == 'Regístrate'){
+                    target = 'http://localhost:8080/DataWebWizard/webresources/signup'
+                }else{
+                    target = "http://localhost:8080/DataWebWizard/webresources/login?username=llanda&password=123"
+                }
+                alert(target);
+                if (window.XMLHttpRequest){
+                    ajaxRequest=new XMLHttpRequest();
+                } else { 
+                    ajaxRequest=new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                ajaxRequest.onreadystatechange = function(){
+                    alert(ajaxRequest.readyState);
+                    alert(ajaxRequest.status);
+                    if (ajaxRequest.readyState==4 && (ajaxRequest.status==200)){
+                        alert(ajaxRequest.responseXML);
+                    }
+                }
+                ajaxRequest.open('POST', target, true);
+                ajaxRequest.setRequestHeader("Content-Type", "t<ext/html");
+                ajaxRequest.send(''); 
+                */
+               
+               return true;
+            }
+            
             function changeSignUpLogIn(){
-                var form = document.getElementById("form");
+                var ac = document.getElementById("accion");
                 var h1 = document.getElementById("hName");
                 var h2 = document.getElementById("hDbName");
                 var text1 = document.getElementById("name");
                 var text2 = document.getElementById("dbName");
-                var btn = document.getElementById("boton")
+                var btn = document.getElementById("boton");
                 
-                if(form.action === "http://localhost:8080/DataWebWizard/webresources/signup"){
+                
+                if(ac.value == "Regístrate"){
 
-                    h1.hidden=true
+                    h1.hidden=true;
                     h2.hidden=true;
                     text1.hidden=true;
                     text2.hidden=true;
                     
-                    form.action = "http://localhost:8080/DataWebWizard/webresources/login";
+                    ac.value = "Log in";
                     btn.value = "Cambiar a registro";
                 }else{
-                    h1.hidden=false
+                    h1.hidden=false;
                     h2.hidden=false;
                     text1.hidden=false;
                     text2.hidden=false;
                     
-                    form.action = "http://localhost:8080/DataWebWizard/webresources/signup";
+                    ac.value = "Regístrate";
                     btn.value = "Cambiar a Log in";
                 }
             }

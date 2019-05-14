@@ -18,9 +18,21 @@
             <option>blegh</option>
             <option>bluh</option>
         </select>
+        
+        <%
+            if(request.getParameter("password") != null && request.getParameter("username") != ""){
+                HttpSession mySession = request.getSession();
+                mySession.setAttribute("user", request.getParameter("username"));
+                mySession.setMaxInactiveInterval(20);
+            }else{
+                response.sendRedirect("error.jsp");
+            }
+        %>
+        
         <h3>Acciones posibles con la base de datos</h3>
+        <form action="tablas.jsp">
         <input type="submit" value="Agregar tabla" name="agrtabla" />
-        <input type="submit" value="Eliminar tabla" name="elimtabla" />
+        </form>
         <h3>Acciones posibles con una tabla (selecciona la tabla con la que quieres ejecutar la acción)</h3>
         <input type="submit" value="Consulta tabla" name="cons" />
         <input type="submit" value="Agrega entradas" name="agr" />

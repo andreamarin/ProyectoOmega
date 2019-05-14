@@ -12,7 +12,15 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Elimina/Agrega tablas</h1>
+        <%  
+            HttpSession mySession = request.getSession();
+            if(mySession.getAttribute("user") != null){
+                out.println("<h1>Bienvenido "+mySession.getAttribute("user")+"!</h1>");
+            }else{
+                response.sendRedirect("error.jsp");
+            }
+        %>
+        <h2>Agrega tablas</h2>
         <form id="form" name="form" action="http://localhost:8080/DataWebWizard/webresources/tableManager" method="POST">
             <h3>Nombre de la tabla</h3>
             <input type="text" name="nombre" value="" />
@@ -25,6 +33,9 @@
             </select>
             <br>
             <input id ="btn" type="submit" value="Crear tabla" name="create" />
+            <%
+                out.println("<input type='hidden' value='"+mySession.getAttribute("user")+"' name='username'/>");
+            %>
         </form>
         <br>
         <input type="button" value="Agrega campo" onclick="agregaCampo()"/>
