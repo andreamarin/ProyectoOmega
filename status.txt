@@ -1,75 +1,5 @@
 
-22019/05/11 21:03:44 CONSULT TABLE
-Conexión exitosa a la bd: llanda_luisfe
-Número de filas: 2
-Número de columnas: 3
-BLAH 1
-BLEH 2
-HM 3
-{"table":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"}]}
-Éxito
-
-2019/05/11 21:04:14 GET FIELDS
-Número de filas: 3
-Número de columnas: 4
-NAME 1
-TYPE 2
-LENGTH 3
-PRIMARYKEY 4
-ERROR: java.lang.NullPointerException
-
-2019/05/11 21:08:04 GET FIELDS
-Número de filas: 3
-Número de columnas: 4
-NAME 1
-TYPE 2
-LENGTH 3
-PRIMARYKEY 4
-NAME: blah
-TYPE: varchar
-LENGTH: 1
-PRIMARYKEY: 1
-NAME: bleh
-TYPE: int
-LENGTH: null
-PRIMARYKEY: 0
-NAME: hm
-TYPE: boolean
-LENGTH: null
-PRIMARYKEY: 0
-Éxito
-
-2019/05/11 21:57:11 GET TABLES
-Conexión exitosa a la bd: llanda_luisfe
-Éxito
-
-2019/05/11 23:01:34 GET TABLES
-ERROR SQLException java.sql.SQLNonTransientConnectionException: La URL 'jdbc:derby://localhost:1527/' no tiene el formato correcto.
-ERROR CODE 40000
-ERROR STATE XJ028
-
-2019/05/11 23:03:07 GET FIELDS
-Número de filas: 3
-Número de columnas: 4
-NAME 1
-TYPE 2
-LENGTH 3
-PRIMARYKEY 4
-NAME: blah
-TYPE: varchar
-LENGTH: 1
-PRIMARYKEY: 1
-NAME: bleh
-TYPE: int
-LENGTH: null
-PRIMARYKEY: 0
-NAME: hm
-TYPE: boolean
-LENGTH: null
-PRIMARYKEY: 0
-Éxito
-
-22019/05/11 23:03:30 CONSULT TABLE
+22019/05/14 19:11:55 CONSULT TABLE
 Conexión exitosa a la bd: llanda_luisfe
 Número de filas: 2
 Número de columnas: 3
@@ -85,22 +15,771 @@ HM: true
 {"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"}]}
 Éxito
 
-2019/05/11 23:06:38 INSERT TABLE
+22019/05/14 19:13:07 CONSULT TABLE
 Conexión exitosa a la bd: llanda_luisfe
-INSERT INTO miPrimeraTabla VALUES('4',5,true)
-RESPUESTA: 1
+Número de filas: 2
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"}]}
+Éxito
 
-2019/05/11 23:07:50 CREATE TABLE
-Base de datos: amarina_midb
-Conexión exitosa
-Query: CREATE TABLE tablaUno(blah varchar(1) NOT NULL PRIMARY KEY,bleh int,hm boolean)
-FIELDS QUERYS
-INSERT INTO FIELDS VALUES('blah','varchar','tablaUno','amarina',1,1)
-INSERT INTO FIELDS VALUES('bleh','int','tablaUno','amarina',null,0)
-INSERT INTO FIELDS VALUES('hm','boolean','tablaUno','amarina',null,0)
-
-
-2019/05/11 23:09:07 DELETE FROM TABLE
+22019/05/14 19:16:27 CONSULT TABLE
 Conexión exitosa a la bd: llanda_luisfe
-DELETE FROM miPrimeraTabla WHERE blah='4'
-RESPUESTA: 1
+Número de filas: 0
+Número de columnas: 2
+Return null
+
+22019/05/14 19:19:21 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 0
+Número de columnas: 2
+Return null
+{"response":"No tienes datos todavía."}
+Éxito
+
+2019/05/14 19:20:15 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 19:20:19 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+ERROR SQLException java.sql.SQLSyntaxErrorException: La tabla/vista 'UNDEFINED' no existe.
+ERROR CODE 30000
+ERROR STATE 42X05
+
+2019/05/14 19:22:00 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 19:22:05 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+ERROR SQLException java.sql.SQLSyntaxErrorException: La tabla/vista 'UNDEFINED' no existe.
+ERROR CODE 30000
+ERROR STATE 42X05
+
+2019/05/14 19:22:09 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 19:22:11 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+ERROR SQLException java.sql.SQLSyntaxErrorException: La tabla/vista 'UNDEFINED' no existe.
+ERROR CODE 30000
+ERROR STATE 42X05
+
+2019/05/14 19:22:15 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 19:22:21 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 2
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"}]}
+Éxito
+
+22019/05/14 19:22:30 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 0
+Número de columnas: 2
+Return null
+{"response":"No tienes datos todavía."}
+Éxito
+
+22019/05/14 19:23:56 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 0
+Número de columnas: 2
+Return null
+{"response":"No tienes datos todavía."}
+Éxito
+
+2019/05/14 19:25:34 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 19:25:37 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+ERROR SQLException java.sql.SQLSyntaxErrorException: La tabla/vista 'UNDEFINED' no existe.
+ERROR CODE 30000
+ERROR STATE 42X05
+
+2019/05/14 19:26:19 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/14 19:27:37 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/14 19:28:40 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/14 19:28:46 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 19:29:01 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+ERROR SQLException java.sql.SQLSyntaxErrorException: La tabla/vista 'UNDEFINED' no existe.
+ERROR CODE 30000
+ERROR STATE 42X05
+
+2019/05/14 19:31:10 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/14 19:32:04 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/14 19:33:11 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/14 19:38:27 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/14 19:39:21 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/14 19:41:26 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/14 19:54:06 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 19:54:10 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 0
+Número de columnas: 2
+Return null
+{"response":"No tienes datos todavía."}
+Éxito
+
+2019/05/14 20:27:00 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:27:03 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 0
+Número de columnas: 2
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/14 20:29:19 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:29:23 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 0
+Número de columnas: 2
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/14 20:30:08 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:30:11 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 0
+Número de columnas: 2
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/14 20:30:17 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:30:23 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 2
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"}]}
+Éxito
+
+2019/05/14 20:39:38 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:39:40 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 0
+Número de columnas: 2
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/14 20:39:46 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:39:51 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 2
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"}]}
+Éxito
+
+2019/05/14 20:41:25 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:41:30 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 2
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"}]}
+Éxito
+
+2019/05/14 20:42:48 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:42:57 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 2
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"}]}
+Éxito
+
+2019/05/14 20:43:42 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:43:50 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 0
+Número de columnas: 2
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/14 20:43:51 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:43:55 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 2
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"}]}
+Éxito
+
+2019/05/14 20:44:58 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:45:04 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 20:48:06 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:48:15 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 0
+Número de columnas: 2
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/14 20:48:24 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/14 20:48:54 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:48:57 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 0
+Número de columnas: 2
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/14 20:50:43 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:50:49 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 20:53:47 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 20:53:50 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 21:02:14 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:02:20 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 21:03:12 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:03:18 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 21:06:51 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:06:55 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 21:10:41 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:10:50 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 21:11:26 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:11:31 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 21:13:16 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:13:20 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 21:14:54 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:14:57 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 21:16:09 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:16:13 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 21:22:33 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:22:41 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 21:24:34 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:24:41 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 21:26:40 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:26:47 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 0
+Número de columnas: 2
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/14 21:27:04 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/14 21:27:51 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:27:53 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+ERROR SQLException java.sql.SQLSyntaxErrorException: Error de sintaxis: Encountered "<EOF>" at line 1, column 13.
+ERROR CODE 30000
+ERROR STATE 42X01
+
+2019/05/14 21:28:03 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:28:11 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 21:34:44 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:34:49 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 21:35:07 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:35:14 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/14 21:36:14 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:36:18 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito

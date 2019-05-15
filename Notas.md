@@ -28,10 +28,26 @@
 * Consult table —> json GET
 * Consult fields —> json GET
 
-###Avances
+###Requerimientos
+
+#### Técnicos
 
 * [x] SOAPS
-* [ ] REST
-* [ ] Páginas web
-* [ ] Sesiones
-* [ ] Login
+* [x] REST
+* [x] POST/GET/PUT/DELETE
+* [x] XML/JSON
+* [x] Ajax
+
+#### Funcionales
+
+* [x] Registro usuarios
+* [x] Scroll n registros
+* [x] Lista de tablas por usuario
+* [ ] Borrar registros
+* [ ] Editar registros
+* [ ] Insertar registros
+* [ ] Crear tablas
+* [x] Sesiones
+* [x] Login
+* [x] No acceder sin autorización
+

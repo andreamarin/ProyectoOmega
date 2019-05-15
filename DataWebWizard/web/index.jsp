@@ -52,8 +52,6 @@
                     alert("llena los campos de usuario y contraseña");
                 }
                 
-                
-                
                 return res;
             }
             

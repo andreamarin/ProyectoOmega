@@ -425,10 +425,9 @@ public class TableManager {
             rs = query.executeQuery(query_str);
             
             res = ResultSetToArray(rs, logger);
+            
             logger.println(res.toString());
             logger.println("Éxito");
-            
-            con.close();
             
         } catch (ClassNotFoundException ex) {
             json.put("response", "error");
@@ -455,9 +454,9 @@ public class TableManager {
                     Logger.getLogger(TableManager.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
+            
+            logger.close();
         }
-        
-        logger.close();
         
         return res;
     }
@@ -522,9 +521,11 @@ public class TableManager {
                     Logger.getLogger(TableManager.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
+            
+            logger.close();
         }
         
-        logger.close();
+        
         return res;
     }
     
@@ -672,6 +673,7 @@ public class TableManager {
     private String ResultSetToArray(ResultSet rs, PrintWriter logger){
         JSONArray table = new JSONArray();
         String[] colNames;
+        JSONObject response = new JSONObject();
         try{
             rs.last();
             ResultSetMetaData rsmd = rs.getMetaData();
@@ -685,7 +687,8 @@ public class TableManager {
            
             if (numRows == 0){
                logger.println("Return null");
-               return null;
+               response.put("response", "No tienes datos todavia.");
+               return response.toJSONString();
             }
             
             for (int i = 1; i <= numCols; i++) {
@@ -708,8 +711,6 @@ public class TableManager {
             
             logger.close();
         }
-        
-        JSONObject response = new JSONObject();
         response.put("response", table);
         
         return response.toJSONString();

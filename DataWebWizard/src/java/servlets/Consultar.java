@@ -5,7 +5,7 @@
  */
 package servlets;
 
-import RESTClients.RestLogInClient;
+import RESTClients.QueryClient;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -13,13 +13,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import returns.Response;
 
 /**
  *
- * @author Luis Landa
+ * @author andreamarin
  */
-public class Balidar extends HttpServlet {
+public class Consultar extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,30 +32,20 @@ public class Balidar extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        String usr = request.getParameter("username");
-        String psswrd = request.getParameter("password");
-        String name = request.getParameter("name");
-        String dbName = request.getParameter("dbName");
-        String tipo = request.getParameter("accion");
         
-        RestLogInClient client = new RestLogInClient();
-        Response res;
+        HttpSession mySession = request.getSession();
         
-        if(tipo.equalsIgnoreCase("log in")){
-            res = client.login(usr, psswrd);
+        if( mySession.getAttribute("user") != null){
+            String user = mySession.getAttribute("user").toString();
+            String tableName = request.getParameter("tabla");
+            
+            QueryClient query = new QueryClient();
+            String res = query.getTable(tableName, user);
+            
+            response.sendRedirect("consulta.jsp?datos="+res+"&tabla="+tableName);
         }else{
-            res = client.signup(usr, psswrd, name, dbName);
+            response.sendRedirect("error.jsp");
         }
-        
-        if(res.getRes()){
-            HttpSession mySession = request.getSession();
-            mySession.setAttribute("user", usr);
-            //mySession.setMaxInactiveInterval(20);
-            response.sendRedirect("menu.jsp");
-        }else{
-            response.sendRedirect("index.jsp");
-        }
-    
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

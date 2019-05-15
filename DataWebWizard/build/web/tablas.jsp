@@ -21,16 +21,19 @@
             }
         %>
         <h2>Agrega tablas</h2>
-        <form id="form" name="form" action="http://localhost:8080/DataWebWizard/webresources/tableManager" method="POST">
+        <form id="form" name="form">
             <h3>Nombre de la tabla</h3>
-            <input type="text" name="nombre" value="" />
+            <input type="text" id="tableName" value="" />
             <h3>Campos</h3>
             <p>Nombre del campo: </p><input type="text" name="campo1" value=""/>
             <p>Tipo</p>
-            <select name="Type">
+            <select name="type" id = "type">
                 <option>VARCHAR</option>
                 <option>INT</option>
+                <option>BOOLEAN</option>
             </select>
+            <p>Longitud: </p><input type="number" name="long" value=""/>
+            <input type="radio" name="pk" value="pk1" />
             <br>
             <input id ="btn" type="submit" value="Crear tabla" name="create" />
             <%
@@ -54,7 +57,22 @@
                 var tipotxt = document.createElement("P");
                 tipotxt.innerText = "Tipo";
                 
-                var tipo = document.createElement("Select");
+                var lengthtxt = document.createElement("P");
+                tipotxt.innerText = "Longitud: ";
+                
+                var length = document.createElement("INPUT");
+                length.setAttribute('type','number');
+                
+                var pk = document.createElement("P");
+                tipotxt.innerText = "Primary key ";
+                
+                var radiobtn = document.createElement("INPUT");
+                radiobtn.setAttribute('type','radio');
+                radiobtn.setAttribute('name','pk');
+                radiobtn.setAttribute('value','pk2');
+                
+                var tipo = document.getElementById("type").cloneNode(true);
+                tipo.setAttribute('id','type2');
                 
                 var boton = document.createElement("INPUT");
                 boton.setAttribute('id','btn');
@@ -66,7 +84,10 @@
                 document.getElementById("form").appendChild(nom);
                 document.getElementById("form").appendChild(tipotxt);
                 document.getElementById("form").appendChild(tipo);
-                document.getElementById("form").appendChild(boton);
+                document.getElementById("form").appendChild(lengthtxt);
+                document.getElementById("form").appendChild(length);
+                document.getElementById("form").appendChild(radiobtn);
+                document.getElementById("form").appendChild(pk);
             }
         </script>
     </body>
