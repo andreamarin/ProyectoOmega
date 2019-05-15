@@ -43,17 +43,15 @@
         <input type="submit" value="Consulta tabla" name="cons" />
         </form>
         
-        <form action="tablas.jsp">
-        <input type="submit" value="Agrega entradas" name="agr" />
-        <input type="submit" value="Elimina entradas" name="elim" />
-        <input type="submit" value="Modifica entradas" name="mod" />
+        <form action="Campos">
+        <input type="submit" value="Interactúa con tu tabla"/>
+         <input type='hidden' value='' id='tabla2' name = 'tabla2'/>
         </form>
          
         <script> 
             function update(value){
-                
-                
                 document.getElementById("tabla").value = value;
+                document.getElementById("tabla2").value = value;
             }
             
             function loadTables(){
@@ -75,9 +73,11 @@
                         var n = json.response.length;
 
                         if(json.response != "error"){
+                            document.getElementById("tabla").value = json.response[0];
+                            document.getElementById("tabla2").value = json.response[0];
                             for(var i = 0; i < json.response.length; i++){
                                 var nom = json.response[i]
-                                txt += "<option value = '"+nom+"'>"+json.response[i]+"</option>";
+                                txt += "<option value = '"+nom+"'>"+nom+"</option>";
                             }
                             document.getElementById("tables").innerHTML = txt;
                             document.getElementById("error").hidden = true;

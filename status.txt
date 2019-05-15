@@ -783,3 +783,611 @@ BLEH: 24
 HM: false
 {"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
 Éxito
+
+2019/05/14 21:56:06 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+22019/05/14 21:56:25 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/15 09:34:36 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+32019/05/15 09:34:40 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/15 09:35:38 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+32019/05/15 09:35:40 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/15 09:39:39 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 09:43:05 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 09:44:01 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 09:44:31 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 09:47:09 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 09:51:12 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 09:52:44 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 09:53:19 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 09:57:31 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 09:58:58 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 10:03:23 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 10:09:18 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 10:23:39 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 10:25:36 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 10:27:14 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 10:27:23 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 10:28:22 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 10:29:16 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 10:34:30 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 10:34:39 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+32019/05/15 10:34:52 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+BLAH 1
+BLEH 2
+HM 3
+BLAH: 1
+BLEH: 15
+HM: true
+BLAH: 2
+BLEH: 45
+HM: true
+BLAH: 3
+BLEH: 24
+HM: false
+{"response":[{"BLEH":"15","HM":"true","BLAH":"1"},{"BLEH":"45","HM":"true","BLAH":"2"},{"BLEH":"24","HM":"false","BLAH":"3"}]}
+Éxito
+
+2019/05/15 10:35:10 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+32019/05/15 10:35:17 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 0
+Número de columnas: 2
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/15 10:35:24 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 10:53:58 CREATE TABLE
+Base de datos: amarina_midb
+Conexión exitosa
+Query: CREATE TABLE miPrimerTabla(blah varchar(1) NOT NULL PRIMARY KEY,bleh int,hm boolean)
+FIELDS QUERYS
+INSERT INTO FIELDS VALUES('blah','varchar','miPrimerTabla','amarina',1,1)
+INSERT INTO FIELDS VALUES('bleh','int','miPrimerTabla','amarina',null,0)
+INSERT INTO FIELDS VALUES('hm','boolean','miPrimerTabla','amarina',null,0)
+
+
+2019/05/15 11:04:03 CREATE TABLE
+null
+Base de datos: amarina_midb
+Conexión exitosa
+
+2019/05/15 11:04:42 CREATE TABLE
+null
+Base de datos: amarina_midb
+Conexión exitosa
+
+2019/05/15 11:06:14 CREATE TABLE
+null
+Base de datos: amarina_midb
+Conexión exitosa
+
+2019/05/15 11:07:54 CREATE TABLE
+a,varchar,2,1;b,int,2,0
+Base de datos: amarina_midb
+Conexión exitosa
+Query: CREATE TABLE TablaUno(a varchar(2) NOT NULL PRIMARY KEY,b int(2))
+ERROR SQLException java.sql.SQLSyntaxErrorException: Error de sintaxis: Encountered "(" at line 1, column 62.
+ERROR CODE 30000
+ERROR STATE 42X01
+
+2019/05/15 11:08:24 CREATE TABLE
+a,varchar,2,1;b,int,null,0
+Base de datos: amarina_midb
+Conexión exitosa
+Query: CREATE TABLE TablaUno(a varchar(2) NOT NULL PRIMARY KEY,b int)
+ERROR SQLException java.sql.SQLTransactionRollbackException: Table/View 'TABLAUNO' ya existe en Schema 'AMARINA'.
+ERROR CODE 30000
+ERROR STATE X0Y32
+
+2019/05/15 11:10:24 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 11:10:53 CREATE TABLE
+a,VARCHAR,3,0;b,INT,null,1;
+Base de datos: llanda_luisfe
+Conexión exitosa
+Query: CREATE TABLE TablaPrueba(a VARCHAR(3),b INT NOT NULL PRIMARY KEY)
+
+2019/05/15 11:13:39 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 11:14:03 CREATE TABLE
+a,VARCHAR,2,0;b,INT,null,1;
+Base de datos: llanda_luisfe
+Conexión exitosa
+Query: CREATE TABLE TablaPrueba(a VARCHAR(2),b INT NOT NULL PRIMARY KEY)
+
+2019/05/15 11:14:59 CREATE TABLE
+a,INT,null,1;
+Base de datos: llanda_luisfe
+Conexión exitosa
+Query: CREATE TABLE tabla2(a INT NOT NULL PRIMARY KEY)
+
+2019/05/15 11:15:02 CREATE TABLE
+a,INT,null,1;
+Base de datos: llanda_luisfe
+Conexión exitosa
+Query: CREATE TABLE tabla2(a INT NOT NULL PRIMARY KEY)
+ERROR SQLException java.sql.SQLTransactionRollbackException: Table/View 'TABLA2' ya existe en Schema 'LLANDA'.
+ERROR CODE 30000
+ERROR STATE X0Y32
+
+2019/05/15 11:15:42 CREATE TABLE
+a,VARCHAR,2,1;
+Base de datos: llanda_luisfe
+Conexión exitosa
+Query: CREATE TABLE (a VARCHAR(2) NOT NULL PRIMARY KEY)
+ERROR SQLException java.sql.SQLSyntaxErrorException: Error de sintaxis: Encountered "(" at line 1, column 14.
+ERROR CODE 30000
+ERROR STATE 42X01
+
+2019/05/15 11:15:49 CREATE TABLE
+a,VARCHAR,2,1;
+Base de datos: llanda_luisfe
+Conexión exitosa
+Query: CREATE TABLE sdsdsdsds(a VARCHAR(2) NOT NULL PRIMARY KEY)
+
+2019/05/15 11:15:53 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 11:19:45 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 11:20:23 CREATE TABLE
+hola,BOOLEAN,null,1;adios,BOOLEAN,null,0;
+Base de datos: llanda_luisfe
+Conexión exitosa
+Query: CREATE TABLE tabla3(hola BOOLEAN NOT NULL PRIMARY KEY,adios BOOLEAN)
+
+2019/05/15 11:20:33 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 11:22:28 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 11:22:32 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 11:22:37 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 11:22:39 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 11:29:30 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 11:46:30 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 11:46:43 GET FIELDS
+Número de filas: 0
+Número de columnas: 4
+Return null
+Éxito
+
+2019/05/15 11:46:57 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 11:49:08 GET FIELDS
+Número de filas: 0
+Número de columnas: 4
+Return null
+Éxito
+
+2019/05/15 11:50:09 GET FIELDS
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: blah
+TYPE: varchar
+LENGTH: 1
+PRIMARYKEY: 1
+NAME: bleh
+TYPE: int
+LENGTH: null
+PRIMARYKEY: 0
+NAME: hm
+TYPE: boolean
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 11:58:14 GET FIELDS
+Número de filas: 0
+Número de columnas: 4
+Return null
+Éxito
+
+2019/05/15 12:00:07 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'null' AND TABLE_NAME = 'null'
+Número de filas: 0
+Número de columnas: 4
+Return null
+Éxito
+
+2019/05/15 12:01:19 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'MiPrimeraTabla'
+Número de filas: 0
+Número de columnas: 4
+Return null
+Éxito
+
+2019/05/15 12:01:21 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'MiPrimeraTabla'
+Número de filas: 0
+Número de columnas: 4
+Return null
+Éxito
+
+2019/05/15 12:01:55 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'MIPRIMERATABLA'
+Número de filas: 0
+Número de columnas: 4
+Return null
+Éxito
+
+2019/05/15 12:02:38 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'miPrimeraTabla'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: blah
+TYPE: varchar
+LENGTH: 1
+PRIMARYKEY: 1
+NAME: bleh
+TYPE: int
+LENGTH: null
+PRIMARYKEY: 0
+NAME: hm
+TYPE: boolean
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 12:02:53 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'MIPRIMERATABLA'
+Número de filas: 0
+Número de columnas: 4
+Return null
+Éxito
+
+2019/05/15 12:03:39 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'miPrimeraTabla'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: blah
+TYPE: varchar
+LENGTH: 1
+PRIMARYKEY: 1
+NAME: bleh
+TYPE: int
+LENGTH: null
+PRIMARYKEY: 0
+NAME: hm
+TYPE: boolean
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 12:04:50 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'miPrimeraTabla'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: blah
+TYPE: varchar
+LENGTH: 1
+PRIMARYKEY: 1
+NAME: bleh
+TYPE: int
+LENGTH: null
+PRIMARYKEY: 0
+NAME: hm
+TYPE: boolean
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 12:09:05 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'MIPRIMERATABLA'
+Número de filas: 1
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: blah
+TYPE: varchar
+LENGTH: 1
+PRIMARYKEY: 1
+Éxito
+
+2019/05/15 12:09:29 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 12:09:32 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'null'
+Número de filas: 0
+Número de columnas: 4
+Return null
+Éxito
+
+2019/05/15 12:09:44 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 12:11:59 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 12:12:02 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'MIPRIMERATABLA'
+Número de filas: 1
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: blah
+TYPE: varchar
+LENGTH: 1
+PRIMARYKEY: 1
+Éxito
+
+2019/05/15 12:19:34 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 12:19:37 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'MIPRIMERATABLA'
+Número de filas: 1
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: blah
+TYPE: varchar
+LENGTH: 1
+PRIMARYKEY: 1
+Éxito
+
+2019/05/15 12:21:01 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 12:21:04 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'MIPRIMERATABLA'
+Número de filas: 1
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: blah
+TYPE: varchar
+LENGTH: 1
+PRIMARYKEY: 1
+Éxito
+
+2019/05/15 12:22:15 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 12:22:39 CREATE TABLE
+a,VARCHAR,3,0;b,INT,null,1;c,BOOLEAN,null,0;
+Base de datos: llanda_luisfe
+Conexión exitosa
+Query: CREATE TABLE tabla(a VARCHAR(3),b INT NOT NULL PRIMARY KEY,c BOOLEAN)
+
+2019/05/15 12:22:41 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 12:22:45 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 12:26:52 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 12:26:57 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito

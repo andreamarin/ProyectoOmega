@@ -43,7 +43,7 @@ public class TableManager {
     *------------------------------------------------------------------------------------*/
     
     @WebMethod(operationName = "create")
-    public boolean create(@WebParam(name = "tableName") String tableName, @WebParam(name = "username") String username, @WebParam(name = "fields_str") String fields_str) {
+    public boolean create(@WebParam(name = "tableName") String tableName, @WebParam(name = "username") String username, @WebParam(name = "fieldsStr") String fieldsStr) {
         String query_str = "";
         String db = "";
         String pswd = "";
@@ -64,6 +64,7 @@ public class TableManager {
         }
         
         logger.println("\n"+dateFormat.format(date)+" CREATE TABLE");
+        logger.println(fieldsStr);
         
         try {
             Class.forName("org.apache.derby.jdbc.ClientDriver");
@@ -84,7 +85,7 @@ public class TableManager {
             con = DriverManager.getConnection("jdbc:derby://localhost:1527/"+db, username, pswd);
             logger.println("Conexión exitosa");
             
-            fields = fields_str.split(";");
+            fields = fieldsStr.split(";");
             query_str = createQuery(fields, tableName);
             logger.println("Query: "+query_str);
             
@@ -103,6 +104,7 @@ public class TableManager {
             logger.println("ERROR STATE "+ex.getSQLState());
             status_code = ex.getSQLState();
         }finally{
+            logger.close();
             if(con != null){
                 try {
                     con.close();
@@ -134,10 +136,11 @@ public class TableManager {
                     Logger.getLogger(TableManager.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
+            logger.close();
         }
         
         
-        logger.close();
+        
         return res;
     }
     
@@ -208,6 +211,7 @@ public class TableManager {
             logger.println("ERROR CODE "+ex.getErrorCode());
             logger.println("ERROR STATE "+ex.getSQLState());
         }finally{
+            logger.close();
             if(con != null){
                 try {
                     con.close();
@@ -217,7 +221,6 @@ public class TableManager {
             }
         }
         
-        logger.close();
         return res != 0;
     }
     
@@ -278,6 +281,7 @@ public class TableManager {
             logger.println("ERROR CODE "+ex.getErrorCode());
             logger.println("ERROR STATE "+ex.getSQLState());
         }finally{
+            logger.close();
             if(con != null){
                 try {
                     con.close();
@@ -287,7 +291,6 @@ public class TableManager {
             }
         }
         
-        logger.close();
         return res != 0;
     }
     
@@ -362,6 +365,7 @@ public class TableManager {
             logger.println("ERROR CODE "+ex.getErrorCode());
             logger.println("ERROR STATE "+ex.getSQLState());
         }finally{
+            logger.close();
             if(con != null){
                 try {
                     con.close();
@@ -371,7 +375,6 @@ public class TableManager {
             }
         }
         
-        logger.close();
         return res != 0;
     }
 
@@ -444,6 +447,7 @@ public class TableManager {
             logger.println("ERROR CODE "+ex.getErrorCode());
             logger.println("ERROR STATE "+ex.getSQLState());
         }finally{
+            logger.close();
             if(con != null){
                 try {
                     con.close();
@@ -455,7 +459,6 @@ public class TableManager {
                 }
             }
             
-            logger.close();
         }
         
         return res;
@@ -490,6 +493,7 @@ public class TableManager {
             String query_str = "SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS "
                     + "WHERE USERNAME = '" + username + "' AND TABLE_NAME = '" + tableName + "'";
             
+            logger.println(query_str);
             ResultSet rs = query.executeQuery(query_str);
             
             res = ResultSetToArray(rs, logger);
@@ -511,6 +515,7 @@ public class TableManager {
             logger.println("ERROR CODE "+ex.getErrorCode());
             logger.println("ERROR STATE "+ex.getSQLState());
         }finally{
+            logger.close();
             if(con != null){
                 try {
                     con.close();
@@ -521,8 +526,6 @@ public class TableManager {
                     Logger.getLogger(TableManager.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
-            
-            logger.close();
         }
         
         
@@ -593,6 +596,7 @@ public class TableManager {
             Logger.getLogger(TableManager.class.getName()).log(Level.SEVERE, null, ex);
             logger.println("ERROR ClassNotFoundException "+ex);
         }finally{
+            logger.close();
             if(con != null){
                 try {
                     con.close();
@@ -605,8 +609,6 @@ public class TableManager {
                 }
             }
         }
-        
-        logger.close();
         return json.toJSONString();
     }
     
@@ -645,6 +647,7 @@ public class TableManager {
     
     private String insertFields(String[] fields, String tableName, String username, Connection con){
         String res = "";
+        tableName = tableName.toUpperCase();
         try {
             String query = "";
             Statement stmnt = con.createStatement();

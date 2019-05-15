@@ -34,17 +34,17 @@
 <message name="insertResponse">
 <part name="parameters" element="tns:insertResponse"/>
 </message>
-<message name="getTables">
-<part name="parameters" element="tns:getTables"/>
-</message>
-<message name="getTablesResponse">
-<part name="parameters" element="tns:getTablesResponse"/>
-</message>
 <message name="consult">
 <part name="parameters" element="tns:consult"/>
 </message>
 <message name="consultResponse">
 <part name="parameters" element="tns:consultResponse"/>
+</message>
+<message name="getTables">
+<part name="parameters" element="tns:getTables"/>
+</message>
+<message name="getTablesResponse">
+<part name="parameters" element="tns:getTablesResponse"/>
 </message>
 <portType name="TableManager">
 <operation name="update">
@@ -67,13 +67,13 @@
 <input wsam:Action="http://soapservices/TableManager/insertRequest" message="tns:insert"/>
 <output wsam:Action="http://soapservices/TableManager/insertResponse" message="tns:insertResponse"/>
 </operation>
-<operation name="getTables">
-<input wsam:Action="http://soapservices/TableManager/getTablesRequest" message="tns:getTables"/>
-<output wsam:Action="http://soapservices/TableManager/getTablesResponse" message="tns:getTablesResponse"/>
-</operation>
 <operation name="consult">
 <input wsam:Action="http://soapservices/TableManager/consultRequest" message="tns:consult"/>
 <output wsam:Action="http://soapservices/TableManager/consultResponse" message="tns:consultResponse"/>
+</operation>
+<operation name="getTables">
+<input wsam:Action="http://soapservices/TableManager/getTablesRequest" message="tns:getTables"/>
+<output wsam:Action="http://soapservices/TableManager/getTablesResponse" message="tns:getTablesResponse"/>
 </operation>
 </portType>
 <binding name="TableManagerPortBinding" type="tns:TableManager">
@@ -123,7 +123,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="getTables">
+<operation name="consult">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -132,7 +132,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="consult">
+<operation name="getTables">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>

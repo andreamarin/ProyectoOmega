@@ -5,6 +5,7 @@
  */
 package restservices;
 
+import javax.ws.rs.FormParam;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.Produces;
@@ -43,7 +44,7 @@ public class TableQuery {
       
     @POST
     @Produces("application/json")
-    public String getFields(@QueryParam("tableName")String tableName, @QueryParam("username")String username){
+    public String getFields(@FormParam("tableName")String tableName, @FormParam("username")String username){
         tableclient.TableManager port = getPort();
          
         String res = port.getFields(tableName, username);

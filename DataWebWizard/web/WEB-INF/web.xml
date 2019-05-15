@@ -8,6 +8,10 @@
         <servlet-name>Consultar</servlet-name>
         <servlet-class>servlets.Consultar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Campos</servlet-name>
+        <servlet-class>servlets.Campos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Balidar</servlet-name>
         <url-pattern>/Balidar</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>Consultar</servlet-name>
         <url-pattern>/Consultar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Campos</servlet-name>
+        <url-pattern>/Campos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -65,9 +65,9 @@ public class TableManagerResource {
     
     @POST
     @Produces(MediaType.APPLICATION_XML)
-    public Response create(@FormParam("tableName")String tableName, @FormParam("username")String username, @FormParam("fields")String fields){
+    public Response create(@FormParam("tableName")String tableName, @FormParam("username")String username, @FormParam("fieldsStr")String fieldsStr){
         tableclient.TableManager port = getPort();
-        return new Response(port.create(tableName, username, fields));
+        return new Response(port.create(tableName, username, fieldsStr));
     }
     
     private static tableclient.TableManager getPort() {

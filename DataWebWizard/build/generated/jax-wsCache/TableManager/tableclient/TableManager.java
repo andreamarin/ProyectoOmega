@@ -105,7 +105,7 @@ public interface TableManager {
         String tableName,
         @WebParam(name = "username", targetNamespace = "")
         String username,
-        @WebParam(name = "fields_str", targetNamespace = "")
+        @WebParam(name = "fieldsStr", targetNamespace = "")
         String fieldsStr);
 
     /**
@@ -131,21 +131,6 @@ public interface TableManager {
 
     /**
      * 
-     * @param username
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getTables", targetNamespace = "http://soapservices/", className = "tableclient.GetTables")
-    @ResponseWrapper(localName = "getTablesResponse", targetNamespace = "http://soapservices/", className = "tableclient.GetTablesResponse")
-    @Action(input = "http://soapservices/TableManager/getTablesRequest", output = "http://soapservices/TableManager/getTablesResponse")
-    public String getTables(
-        @WebParam(name = "username", targetNamespace = "")
-        String username);
-
-    /**
-     * 
      * @param tableName
      * @param username
      * @return
@@ -159,6 +144,21 @@ public interface TableManager {
     public String consult(
         @WebParam(name = "tableName", targetNamespace = "")
         String tableName,
+        @WebParam(name = "username", targetNamespace = "")
+        String username);
+
+    /**
+     * 
+     * @param username
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getTables", targetNamespace = "http://soapservices/", className = "tableclient.GetTables")
+    @ResponseWrapper(localName = "getTablesResponse", targetNamespace = "http://soapservices/", className = "tableclient.GetTablesResponse")
+    @Action(input = "http://soapservices/TableManager/getTablesRequest", output = "http://soapservices/TableManager/getTablesResponse")
+    public String getTables(
         @WebParam(name = "username", targetNamespace = "")
         String username);
 

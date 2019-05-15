@@ -46,7 +46,7 @@
 * [ ] Borrar registros
 * [ ] Editar registros
 * [ ] Insertar registros
-* [ ] Crear tablas
+* [x] Crear tablas
 * [x] Sesiones
 * [x] Login
 * [x] No acceder sin autorización

@@ -7,7 +7,10 @@ package RESTClients;
 
 import javax.ws.rs.ClientErrorException;
 import javax.ws.rs.client.Client;
+import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.Form;
+import javax.ws.rs.core.Response;
 
 /**
  * Jersey REST client generated for REST resource:TableQuery [query]<br>
@@ -31,8 +34,14 @@ public class QueryClient {
         webTarget = client.target(BASE_URI).path("query");
     }
 
-    public String getFields() throws ClientErrorException {
-        return webTarget.request().post(null, String.class);
+    public String getFields(String username, String tableName) throws ClientErrorException {
+        Form form = new Form();
+        form.param("tableName", tableName);
+        form.param("username", username);
+        Response resp = webTarget.request().post(Entity.form(form));
+        String body = resp.readEntity(String.class);
+        resp.close();
+        return body;
     }
 
     public String getTable(String tableName, String username) throws ClientErrorException {
