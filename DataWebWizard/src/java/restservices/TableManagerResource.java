@@ -47,14 +47,14 @@ public class TableManagerResource {
     
     @DELETE
     @Produces(MediaType.APPLICATION_XML)
-    public Response delete(@FormParam("tableName")String tableName, @FormParam("username")String username, @FormParam("primarykey")String primarykey){
+    public Response delete(@QueryParam("tableName")String tableName, @QueryParam("username")String username, @QueryParam("primarykey")String primarykey){
         tableclient.TableManager port = getPort();
         return new Response(port.delete(tableName, primarykey, username));
     }
     
     @PUT
     @Produces("application/json")
-    public String insert(@FormParam("tableName")String tableName,@FormParam("fields")String fields, @FormParam("username")String username){
+    public String insert(@QueryParam("tableName")String tableName,@QueryParam("fields")String fields, @QueryParam("username")String username){
         tableclient.TableManager port = getPort();
         
         JSONObject jsonResponse = new JSONObject();

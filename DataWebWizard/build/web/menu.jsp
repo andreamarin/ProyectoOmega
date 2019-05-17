@@ -40,11 +40,11 @@
         
         <form action="Consultar">
         <input type='hidden' value='' id='tabla' name = 'tabla'/>
-        <input type="submit" value="Consulta tabla" name="cons" />
+        <input type="submit" value="Consulta tabla" name="cons" id = "consultar"/>
         </form>
         
         <form action="Campos">
-        <input type="submit" value="Interactúa con tu tabla"/>
+        <input type="submit" value="Interactúa con tu tabla" id = "mod"/>
          <input type='hidden' value='' id='tabla2' name = 'tabla2'/>
         </form>
          
@@ -71,6 +71,8 @@
 
                 var txt = "";
                         var n = json.response.length;
+                        
+                        alert(json.response);
 
                         if(json.response != "error"){
                             document.getElementById("tabla").value = json.response[0];
@@ -82,6 +84,20 @@
                             document.getElementById("tables").innerHTML = txt;
                             document.getElementById("error").hidden = true;
                             document.getElementById("tables").hidden = false;
+                            
+                            var tablas = document.getElementById("tables").childNodes;
+                            
+                            if(tablas.length == 0){
+                                var cons = document.getElementById("consultar");
+                                var mod = document.getElementById("mod");
+                                
+                                cons.setAttribute('disabled','disabled');
+                                mod.setAttribute('disabled','disabled');
+                                
+                                
+                                document.getElementById("error").innerHTML = "Por el momento no tienes tablas";
+                            }
+                            
                         }else{
                             document.getElementById("tables").hidden = true;
                             document.getElementById("error").hidden = false;

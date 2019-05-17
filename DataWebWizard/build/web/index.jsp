@@ -41,15 +41,23 @@
                 
                 if(document.getElementById("usr").value != "" && document.getElementById("psswrd").value != ""){
                     if(document.getElementById("accion").value == "Regístrate"){
-                        res = document.getElementById("name").value != "" && document.getElementById("dbName").value != "";
-                        if(!res){
+                        var usr = document.getElementById("usr").value;
+                        
+                        if(!usr.match(/^\D[\w\d]/)){
+                            alert("No puedes iniciar el username con números");
+                            res = false;
+                        }else if(document.getElementById("name").value != "" && document.getElementById("dbName").value != ""){
+                            res = true;
+                        }else{
+                            res = false;
                             alert("Llena los campos de nombre de usuario y nombre de base");
                         }
+                        
                     }else {
                         res = true;
                     }
                 }else{
-                    alert("llena los campos de usuario y contraseña");
+                    alert("Llena los campos de usuario y contraseña");
                 }
                 
                 return res;

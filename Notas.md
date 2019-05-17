@@ -43,11 +43,22 @@
 * [x] Registro usuarios
 * [x] Scroll n registros
 * [x] Lista de tablas por usuario
-* [ ] Borrar registros
-* [ ] Editar registros
-* [ ] Insertar registros
+* [x] Borrar registros
+* [x] Editar registros
+* [x] Insertar registros
 * [x] Crear tablas
 * [x] Sesiones
 * [x] Login
 * [x] No acceder sin autorización
+
+#### Extras
+
+* [ ] Borrar tablas
+* [ ] Reporte de Implementación
+* [ ] README
+
+#### Mejoras
+
+* [ ] Deshabilitar botones consulta/inhabilita si no hay tablas
+* [ ] Modifica exitoso sin datos
 

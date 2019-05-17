@@ -86,7 +86,7 @@
                         var xml = ajaxRequest.responseXML;
                         var response = xml.getElementsByTagName("result")[0];
                         
-                        if(response.childNodes[0].nodeValue){
+                        if(response.childNodes[0].nodeValue == "true"){
                             alert("Tabla creada exitosamente.");
                             document.getElementById("form").hidden = true;
                         }else{

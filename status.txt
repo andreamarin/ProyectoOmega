@@ -1391,3 +1391,1421 @@ TYPE: BOOLEAN
 LENGTH: null
 PRIMARYKEY: 0
 Éxito
+
+2019/05/15 18:05:05 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 18:05:09 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 18:08:26 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 18:08:34 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+32019/05/15 18:08:48 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 0
+Número de columnas: 3
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/15 18:08:50 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 18:08:54 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 18:11:45 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 18:11:50 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 18:14:52 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 18:14:56 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 18:35:43 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 18:35:49 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 18:38:05 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 18:38:10 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 18:50:34 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 18:50:38 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 18:54:16 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 18:54:19 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 19:02:27 INSERT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+
+2019/05/15 19:03:52 INSERT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+INSERT INTO TABLA VALUES('1',1,1)
+ERROR SQLException java.sql.SQLSyntaxErrorException: Las columnas de tipo 'BOOLEAN' no pueden contener valores de tipo 'INTEGER'. 
+ERROR CODE 30000
+ERROR STATE 42821
+
+2019/05/15 19:05:01 INSERT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+INSERT INTO TABLA VALUES('1',1,'1')
+ERROR SQLException java.sql.SQLDataException: Formato de cadena de caracteres no válido para el tipo BOOLEAN.
+ERROR CODE 30000
+ERROR STATE 22018
+
+2019/05/15 19:05:05 INSERT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+INSERT INTO TABLA VALUES('1',1,1)
+ERROR SQLException java.sql.SQLSyntaxErrorException: Las columnas de tipo 'BOOLEAN' no pueden contener valores de tipo 'INTEGER'. 
+ERROR CODE 30000
+ERROR STATE 42821
+
+2019/05/15 19:05:48 INSERT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+INSERT INTO TABLA VALUES('1',1,true)
+RESPUESTA: 1
+
+2019/05/15 19:06:04 INSERT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+INSERT INTO TABLA VALUES('2',1,true)
+ERROR SQLException java.sql.SQLIntegrityConstraintViolationException: Se ha abortado la sentencia porque habría causado un valor de clave duplicado en una restricción de clave única o primaria o en un índice único identificado por 'SQL190515122239110' definido en 'TABLA'.
+ERROR CODE 30000
+ERROR STATE 23505
+
+2019/05/15 19:06:39 INSERT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+INSERT INTO TABLA VALUES('2',2,true)
+RESPUESTA: 1
+
+2019/05/15 19:14:10 INSERT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+INSERT INTO undefined VALUES('1',1,1)
+ERROR SQLException java.sql.SQLSyntaxErrorException: La tabla/vista 'UNDEFINED' no existe.
+ERROR CODE 30000
+ERROR STATE 42X05
+
+2019/05/15 19:14:21 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 19:14:50 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 19:18:18 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 19:18:21 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/15 19:18:33 INSERT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+INSERT INTO undefined VALUES('3',3,true)
+ERROR SQLException java.sql.SQLSyntaxErrorException: La tabla/vista 'UNDEFINED' no existe.
+ERROR CODE 30000
+ERROR STATE 42X05
+
+2019/05/15 19:19:28 INSERT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+INSERT INTO undefined VALUES('3',3,false)
+ERROR SQLException java.sql.SQLSyntaxErrorException: La tabla/vista 'UNDEFINED' no existe.
+ERROR CODE 30000
+ERROR STATE 42X05
+
+2019/05/15 19:20:04 INSERT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+INSERT INTO TABLA VALUES('3',3,true)
+RESPUESTA: 1
+
+2019/05/15 19:21:15 INSERT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+INSERT INTO TABLA VALUES('4',4,true)
+RESPUESTA: 1
+
+2019/05/15 19:38:05 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/15 19:38:09 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 16:19:11 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/16 16:19:28 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 16:23:55 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/16 16:23:57 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'MIPRIMERATABLA'
+Número de filas: 1
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: blah
+TYPE: varchar
+LENGTH: 1
+PRIMARYKEY: 1
+Éxito
+
+2019/05/16 16:27:44 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/16 16:27:49 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 16:29:06 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+32019/05/16 16:29:13 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 4
+Número de columnas: 3
+A 1
+B 2
+C 3
+A: 1
+B: 1
+C: true
+A: 2
+B: 2
+C: true
+A: 3
+B: 3
+C: true
+A: 4
+B: 4
+C: true
+{"response":[{"A":"1","B":"1","C":"true"},{"A":"2","B":"2","C":"true"},{"A":"3","B":"3","C":"true"},{"A":"4","B":"4","C":"true"}]}
+Éxito
+
+2019/05/16 16:29:29 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/16 16:29:34 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 16:30:06 UPDATE TABLE
+Conexión exitosa a la bd: llanda_luisfe
+UPDATE TABLA SET c = false WHERE b = 2
+RESPUESTA: 1
+
+2019/05/16 16:30:13 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+32019/05/16 16:30:16 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 4
+Número de columnas: 3
+A 1
+B 2
+C 3
+A: 1
+B: 1
+C: true
+A: 2
+B: 2
+C: false
+A: 3
+B: 3
+C: true
+A: 4
+B: 4
+C: true
+{"response":[{"A":"1","B":"1","C":"true"},{"A":"2","B":"2","C":"false"},{"A":"3","B":"3","C":"true"},{"A":"4","B":"4","C":"true"}]}
+Éxito
+
+2019/05/16 16:41:44 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/16 16:41:49 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+32019/05/16 16:41:52 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 4
+Número de columnas: 3
+A 1
+B 2
+C 3
+A: 1
+B: 1
+C: true
+A: 2
+B: 2
+C: false
+A: 3
+B: 3
+C: true
+A: 4
+B: 4
+C: true
+{"response":[{"A":"1","B":"1","C":"true"},{"A":"2","B":"2","C":"false"},{"A":"3","B":"3","C":"true"},{"A":"4","B":"4","C":"true"}]}
+Éxito
+
+2019/05/16 16:41:58 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/16 16:42:08 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 16:43:31 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/16 16:43:35 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'llanda' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: a
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 0
+NAME: b
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 1
+NAME: c
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 16:43:41 DELETE FROM TABLE
+Conexión exitosa a la bd: llanda_luisfe
+DELETE FROM TABLA WHERE b=4
+RESPUESTA: 1
+
+2019/05/16 16:43:48 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+32019/05/16 16:43:51 CONSULT TABLE
+Conexión exitosa a la bd: llanda_luisfe
+Número de filas: 3
+Número de columnas: 3
+A 1
+B 2
+C 3
+A: 1
+B: 1
+C: true
+A: 2
+B: 2
+C: false
+A: 3
+B: 3
+C: true
+{"response":[{"A":"1","B":"1","C":"true"},{"A":"2","B":"2","C":"false"},{"A":"3","B":"3","C":"true"}]}
+Éxito
+
+2019/05/16 16:47:28 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/16 16:57:54 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+32019/05/16 16:58:05 CONSULT TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+ERROR SQLException java.sql.SQLSyntaxErrorException: El esquema 'FER' no existe.
+ERROR CODE 30000
+ERROR STATE 42Y07
+
+2019/05/16 16:58:10 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+2019/05/16 16:58:56 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'fer' AND TABLE_NAME = 'undefined'
+Número de filas: 0
+Número de columnas: 4
+Return null
+Éxito
+
+2019/05/16 16:59:05 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+2019/05/16 17:00:18 CREATE TABLE
+campodefer,VARCHAR,20,1;campodos,INT,null,0;ultimo,BOOLEAN,null,0;
+Base de datos: fer_labasedefernanda
+Conexión exitosa
+Query: CREATE TABLE tabladefer(campodefer VARCHAR(20) NOT NULL PRIMARY KEY,campodos INT,ultimo BOOLEAN)
+
+2019/05/16 17:00:24 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+32019/05/16 17:00:30 CONSULT TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+Número de filas: 0
+Número de columnas: 3
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/16 17:00:35 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+2019/05/16 17:00:36 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'fer' AND TABLE_NAME = 'TABLADEFER'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: campodefer
+TYPE: VARCHAR
+LENGTH: 20
+PRIMARYKEY: 1
+NAME: campodos
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+NAME: ultimo
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 17:01:06 UPDATE TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+UPDATE TABLADEFER SET campodos = 4 WHERE campodefer = ''
+RESPUESTA: 0
+
+2019/05/16 17:01:22 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+32019/05/16 17:01:25 CONSULT TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+Número de filas: 0
+Número de columnas: 3
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/16 17:01:28 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+2019/05/16 17:01:34 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+2019/05/16 17:01:36 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'fer' AND TABLE_NAME = 'TABLADEFER'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: campodefer
+TYPE: VARCHAR
+LENGTH: 20
+PRIMARYKEY: 1
+NAME: campodos
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+NAME: ultimo
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 17:01:52 UPDATE TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+UPDATE TABLADEFER SET campodos = kasd WHERE campodefer = ''
+ERROR SQLException java.sql.SQLSyntaxErrorException: La columna 'KASD' no está en ninguna tabla de la lista FROM o aparece en una especificación de unión y está fuera del ámbito de la especificación de unión o bien aparece en una cláusula HAVING y no está en la lista GROUP BY. Si se trata de una sentencia CREATE o ALTER TABLE, 'KASD' no es una columna de la tabla destino.
+ERROR CODE 30000
+ERROR STATE 42X04
+
+2019/05/16 17:02:04 UPDATE TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+UPDATE TABLADEFER SET campodos = kasd WHERE campodefer = 'asd'
+ERROR SQLException java.sql.SQLSyntaxErrorException: La columna 'KASD' no está en ninguna tabla de la lista FROM o aparece en una especificación de unión y está fuera del ámbito de la especificación de unión o bien aparece en una cláusula HAVING y no está en la lista GROUP BY. Si se trata de una sentencia CREATE o ALTER TABLE, 'KASD' no es una columna de la tabla destino.
+ERROR CODE 30000
+ERROR STATE 42X04
+
+2019/05/16 17:02:18 DELETE FROM TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+DELETE FROM TABLADEFER WHERE campodefer=''
+RESPUESTA: 0
+
+2019/05/16 17:02:24 DELETE FROM TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+DELETE FROM TABLADEFER WHERE campodefer='sas'
+RESPUESTA: 0
+
+2019/05/16 17:03:10 DELETE FROM TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+DELETE FROM TABLADEFER WHERE campodefer=''
+RESPUESTA: 0
+
+2019/05/16 17:03:13 DELETE FROM TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+DELETE FROM TABLADEFER WHERE campodefer=''
+RESPUESTA: 0
+
+2019/05/16 17:06:14 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+2019/05/16 17:06:17 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'fer' AND TABLE_NAME = 'TABLADEFER'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: campodefer
+TYPE: VARCHAR
+LENGTH: 20
+PRIMARYKEY: 1
+NAME: campodos
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+NAME: ultimo
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 17:07:17 UPDATE TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+UPDATE TABLADEFER SET campodos = 2 WHERE campodefer = 'k'
+RESPUESTA: 0
+
+2019/05/16 17:13:17 UPDATE TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+UPDATE tabladefer SET campodos = 2 WHERE campodefer = k
+ERROR SQLException java.sql.SQLSyntaxErrorException: La columna 'K' no está en ninguna tabla de la lista FROM o aparece en una especificación de unión y está fuera del ámbito de la especificación de unión o bien aparece en una cláusula HAVING y no está en la lista GROUP BY. Si se trata de una sentencia CREATE o ALTER TABLE, 'K' no es una columna de la tabla destino.
+ERROR CODE 30000
+ERROR STATE 42X04
+
+2019/05/16 17:14:50 UPDATE TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+UPDATE TABLADEFER SET campodos = 5 WHERE campodefer = '2'
+RESPUESTA: 0
+
+2019/05/16 17:15:40 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+2019/05/16 17:15:42 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'fer' AND TABLE_NAME = 'TABLADEFER'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: campodefer
+TYPE: VARCHAR
+LENGTH: 20
+PRIMARYKEY: 1
+NAME: campodos
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+NAME: ultimo
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 17:15:54 UPDATE TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+UPDATE TABLADEFER SET campodos = 2 WHERE campodefer = '3'
+RESPUESTA: 0
+
+2019/05/16 17:16:04 UPDATE TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+UPDATE TABLADEFER SET campodos = 2 WHERE campodefer = '3'
+RESPUESTA: 0
+
+2019/05/16 17:16:07 UPDATE TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+UPDATE TABLADEFER SET campodos = 2 WHERE campodefer = '3'
+RESPUESTA: 0
+
+2019/05/16 17:16:29 UPDATE TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+UPDATE TABLADEFER SET campodos = 2 WHERE campodefer = '2'
+RESPUESTA: 0
+
+2019/05/16 17:17:14 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+2019/05/16 17:17:20 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'fer' AND TABLE_NAME = 'TABLADEFER'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: campodefer
+TYPE: VARCHAR
+LENGTH: 20
+PRIMARYKEY: 1
+NAME: campodos
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+NAME: ultimo
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 17:17:26 UPDATE TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+UPDATE TABLADEFER SET campodos = 4 WHERE campodefer = '2'
+RESPUESTA: 0
+
+2019/05/16 17:18:30 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+32019/05/16 17:18:34 CONSULT TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+Número de filas: 0
+Número de columnas: 3
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/16 17:18:37 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+32019/05/16 17:18:39 CONSULT TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+Número de filas: 0
+Número de columnas: 3
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/16 17:18:43 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+2019/05/16 17:18:47 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'fer' AND TABLE_NAME = 'TABLADEFER'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: campodefer
+TYPE: VARCHAR
+LENGTH: 20
+PRIMARYKEY: 1
+NAME: campodos
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+NAME: ultimo
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 17:18:59 DELETE FROM TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+DELETE FROM TABLADEFER WHERE campodefer='3'
+RESPUESTA: 0
+
+2019/05/16 17:19:11 INSERT TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+INSERT INTO TABLADEFER VALUES('3',3,4)
+ERROR SQLException java.sql.SQLSyntaxErrorException: Las columnas de tipo 'BOOLEAN' no pueden contener valores de tipo 'INTEGER'. 
+ERROR CODE 30000
+ERROR STATE 42821
+
+2019/05/16 17:19:17 INSERT TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+INSERT INTO TABLADEFER VALUES('3',3,true)
+RESPUESTA: 1
+
+2019/05/16 17:19:19 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+32019/05/16 17:19:21 CONSULT TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+Número de filas: 1
+Número de columnas: 3
+CAMPODEFER 1
+CAMPODOS 2
+ULTIMO 3
+CAMPODEFER: 3
+CAMPODOS: 3
+ULTIMO: true
+{"response":[{"CAMPODEFER":"3","ULTIMO":"true","CAMPODOS":"3"}]}
+Éxito
+
+2019/05/16 17:19:26 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+2019/05/16 17:19:28 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'fer' AND TABLE_NAME = 'TABLADEFER'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: campodefer
+TYPE: VARCHAR
+LENGTH: 20
+PRIMARYKEY: 1
+NAME: campodos
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+NAME: ultimo
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 17:19:59 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+2019/05/16 17:20:02 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'fer' AND TABLE_NAME = 'TABLADEFER'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: campodefer
+TYPE: VARCHAR
+LENGTH: 20
+PRIMARYKEY: 1
+NAME: campodos
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+NAME: ultimo
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 17:20:08 UPDATE TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+UPDATE TABLADEFER SET campodos = 10 WHERE campodefer = '3'
+RESPUESTA: 1
+
+2019/05/16 17:20:11 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+32019/05/16 17:20:14 CONSULT TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+Número de filas: 1
+Número de columnas: 3
+CAMPODEFER 1
+CAMPODOS 2
+ULTIMO 3
+CAMPODEFER: 3
+CAMPODOS: 10
+ULTIMO: true
+{"response":[{"CAMPODEFER":"3","ULTIMO":"true","CAMPODOS":"10"}]}
+Éxito
+
+2019/05/16 17:20:17 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+2019/05/16 17:20:19 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'fer' AND TABLE_NAME = 'TABLADEFER'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: campodefer
+TYPE: VARCHAR
+LENGTH: 20
+PRIMARYKEY: 1
+NAME: campodos
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+NAME: ultimo
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 17:20:23 DELETE FROM TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+DELETE FROM TABLADEFER WHERE campodefer='3'
+RESPUESTA: 1
+
+2019/05/16 17:20:26 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+32019/05/16 17:20:29 CONSULT TABLE
+Conexión exitosa a la bd: fer_labasedefernanda
+Número de filas: 0
+Número de columnas: 3
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/16 17:20:32 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+2019/05/16 17:26:29 GET TABLES
+Conexión exitosa a la bd: fer_labasedefernanda
+Éxito
+
+2019/05/16 17:26:43 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+32019/05/16 17:26:49 CONSULT TABLE
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:26:53 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+32019/05/16 17:26:56 CONSULT TABLE
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:26:59 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:27:00 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = '123' AND TABLE_NAME = ''
+Número de filas: 0
+Número de columnas: 4
+Return null
+Éxito
+
+2019/05/16 17:27:01 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:28:30 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+32019/05/16 17:28:32 CONSULT TABLE
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:28:34 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:31:35 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+32019/05/16 17:31:38 CONSULT TABLE
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:31:40 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:32:00 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:32:01 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:32:11 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:32:35 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:33:45 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:34:09 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:34:44 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:35:12 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:37:12 GET TABLES
+Conexión exitosa a la bd: bd_amarina
+Éxito
+
+2019/05/16 17:38:44 CREATE TABLE
+as,VARCHAR,40,0;  col2 ,VARCHAR,89,1;
+Base de datos: bd_amarina
+Conexión exitosa
+Query: CREATE TABLE p1(as VARCHAR(40),  col2  VARCHAR(89) NOT NULL PRIMARY KEY)
+ERROR SQLException java.sql.SQLSyntaxErrorException: Error de sintaxis: Encountered "as" at line 1, column 17.
+ERROR CODE 30000
+ERROR STATE 42X01
+
+2019/05/16 17:39:11 CREATE TABLE
+as,VARCHAR,40,0;  col2 ,VARCHAR,40,1;
+Base de datos: bd_amarina
+Conexión exitosa
+Query: CREATE TABLE p1(as VARCHAR(40),  col2  VARCHAR(40) NOT NULL PRIMARY KEY)
+ERROR SQLException java.sql.SQLSyntaxErrorException: Error de sintaxis: Encountered "as" at line 1, column 17.
+ERROR CODE 30000
+ERROR STATE 42X01
+
+2019/05/16 17:40:07 GET TABLES
+Conexión exitosa a la bd: bd_amarina
+Éxito
+
+2019/05/16 17:40:57 GET TABLES
+Conexión exitosa a la bd: luisfe_llanda
+Éxito
+
+2019/05/16 17:42:59 GET TABLES
+Conexión exitosa a la bd: llanda_luisfe
+Éxito
+
+2019/05/16 17:43:21 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 123_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:43:41 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 1234_1234.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 17:58:09 GET TABLES
+ERROR SQLException java.sql.SQLNonTransientConnectionException: Se ha rechazado la conexión porque no se ha encontrado la base de datos 1235_123.
+ERROR CODE 40000
+ERROR STATE 08004
+
+2019/05/16 18:01:03 GET TABLES
+Conexión exitosa a la bd: a123_123
+Éxito
+
+2019/05/16 18:07:12 GET TABLES
+Conexión exitosa a la bd: a123_123
+Éxito
+
+2019/05/16 18:07:27 GET TABLES
+Conexión exitosa a la bd: a123_123
+Éxito
+
+2019/05/16 18:08:18 CREATE TABLE
+campo1,INT,null,1;campo2,VARCHAR,20,0;campo3,BOOLEAN,null,0;
+Base de datos: a123_123
+Conexión exitosa
+Query: CREATE TABLE tabla(campo1 INT NOT NULL PRIMARY KEY,campo2 VARCHAR(20),campo3 BOOLEAN)
+
+2019/05/16 18:08:20 GET TABLES
+Conexión exitosa a la bd: a123_123
+Éxito
+
+2019/05/16 18:28:36 GET TABLES
+Conexión exitosa a la bd: amarina_bd
+Éxito
+
+2019/05/16 18:36:52 GET TABLES
+Conexión exitosa a la bd: amarina_bd
+Éxito
+
+2019/05/16 18:50:20 CREATE TABLE
+campo1,VARCHAR,20,1;campo2,INT,null,0;campo3,BOOLEAN,null,0;
+Base de datos: amarina_bd
+Conexión exitosa
+Query: CREATE TABLE TABLA(campo1 VARCHAR(20) NOT NULL PRIMARY KEY,campo2 INT,campo3 BOOLEAN)
+
+2019/05/16 18:50:23 GET TABLES
+Conexión exitosa a la bd: amarina_bd
+Éxito
+
+2019/05/16 18:50:27 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'amarina' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: campo1
+TYPE: VARCHAR
+LENGTH: 20
+PRIMARYKEY: 1
+NAME: campo2
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+NAME: campo3
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 18:51:47 GET TABLES
+Conexión exitosa a la bd: amarina_bd
+Éxito
+
+2019/05/16 18:51:51 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'amarina' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: campo1
+TYPE: VARCHAR
+LENGTH: 20
+PRIMARYKEY: 1
+NAME: campo2
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+NAME: campo3
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/16 18:54:16 INSERT TABLE
+Conexión exitosa a la bd: amarina_bd
+INSERT INTO TABLA VALUES('a',1,true)
+RESPUESTA: 1
+
+2019/05/16 18:54:26 INSERT TABLE
+Conexión exitosa a la bd: amarina_bd
+INSERT INTO TABLA VALUES('b',2,true)
+RESPUESTA: 1
+
+2019/05/16 18:54:35 INSERT TABLE
+Conexión exitosa a la bd: amarina_bd
+INSERT INTO TABLA VALUES('c',3,false)
+RESPUESTA: 1
+
+2019/05/16 18:54:42 INSERT TABLE
+Conexión exitosa a la bd: amarina_bd
+INSERT INTO TABLA VALUES('d',4,true)
+RESPUESTA: 1
+
+2019/05/16 18:54:53 INSERT TABLE
+Conexión exitosa a la bd: amarina_bd
+INSERT INTO TABLA VALUES('e',5,false)
+RESPUESTA: 1
+
+2019/05/16 18:54:57 GET TABLES
+Conexión exitosa a la bd: amarina_bd
+Éxito
+
+32019/05/16 18:54:59 CONSULT TABLE
+Conexión exitosa a la bd: amarina_bd
+Número de filas: 5
+Número de columnas: 3
+CAMPO1 1
+CAMPO2 2
+CAMPO3 3
+CAMPO1: a
+CAMPO2: 1
+CAMPO3: true
+CAMPO1: b
+CAMPO2: 2
+CAMPO3: true
+CAMPO1: c
+CAMPO2: 3
+CAMPO3: false
+CAMPO1: d
+CAMPO2: 4
+CAMPO3: true
+CAMPO1: e
+CAMPO2: 5
+CAMPO3: false
+{"response":[{"CAMPO2":"1","CAMPO3":"true","CAMPO1":"a"},{"CAMPO2":"2","CAMPO3":"true","CAMPO1":"b"},{"CAMPO2":"3","CAMPO3":"false","CAMPO1":"c"},{"CAMPO2":"4","CAMPO3":"true","CAMPO1":"d"},{"CAMPO2":"5","CAMPO3":"false","CAMPO1":"e"}]}
+Éxito
