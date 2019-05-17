@@ -47,6 +47,10 @@
         <input type="submit" value="Interactúa con tu tabla" id = "mod"/>
          <input type='hidden' value='' id='tabla2' name = 'tabla2'/>
         </form>
+        
+        <form action="SignOut">
+        <input type="submit" value="Cerrar Sesión" id = "mod"/>
+        </form>
          
         <script> 
             function update(value){
@@ -71,8 +75,6 @@
 
                 var txt = "";
                         var n = json.response.length;
-                        
-                        alert(json.response);
 
                         if(json.response != "error"){
                             document.getElementById("tabla").value = json.response[0];
@@ -95,10 +97,17 @@
                                 mod.setAttribute('disabled','disabled');
                                 
                                 
+                                document.getElementById("tables").hidden = true;
+                                document.getElementById("error").hidden = false;
                                 document.getElementById("error").innerHTML = "Por el momento no tienes tablas";
                             }
                             
                         }else{
+                            var cons = document.getElementById("consultar");
+                            var mod = document.getElementById("mod");
+
+                            cons.setAttribute('disabled','disabled');
+                            mod.setAttribute('disabled','disabled');
                             document.getElementById("tables").hidden = true;
                             document.getElementById("error").hidden = false;
                             document.getElementById("error").innerHTML = "Por el momento no tienes tablas";

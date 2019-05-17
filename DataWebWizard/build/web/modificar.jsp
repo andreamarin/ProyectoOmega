@@ -61,9 +61,7 @@
         <input type="button" value="Agregar registro" onclick="agrega()"/>
         <input type="button" value="Modificar registro" onclick="modifica()"/>
         <input type="button" value="Eliminar registro" onclick="elimina()"/>
-        <div id = "datos">
-            
-        </div>
+        <a id ="index" href ="menu.jsp">Regresar el menu principal</a>
         
         <script>
         function agrega(){

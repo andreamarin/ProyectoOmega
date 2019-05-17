@@ -23,8 +23,8 @@
             out.println("<h1 id = 'tabla'>" + request.getParameter("tabla") + "</h1>");
             out.println("<input type='hidden' value='"+request.getParameter("datos")+"' id='json'/>");
         %>
-        <p>Número de datos a visualizar simultáneamente: </p><input type="number" id ="n" value="10" />
-        <input type="button" value="Visualizar" onclick="visualizar()"/>
+        <p>Número de datos a visualizar simultáneamente: </p><input type="number" id ="n" value="10" onfocusout="visualizar()"/>
+        <a id ="index" href ="menu.jsp">Regresar el menu principal</a>
         <div id ="data">
             <input type ="button" value ="<<" id ="first" onclick="update(document.getElementById('n').value,1)" disabled = "disabled" />
             <input type ="button" value ="<" id ="before" disabled = "disabled" onclick="update(document.getElementById('n').value, Number(document.getElementById('pag').value)-1)" />

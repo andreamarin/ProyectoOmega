@@ -51,7 +51,7 @@ public class Balidar extends HttpServlet {
         if(res.getRes()){
             HttpSession mySession = request.getSession();
             mySession.setAttribute("user", usr);
-            //mySession.setMaxInactiveInterval(20);
+            //mySession.setMaxInactiveInterval(90);
             response.sendRedirect("menu.jsp");
         }else{
             response.sendRedirect("index.jsp");

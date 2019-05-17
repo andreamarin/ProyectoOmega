@@ -2809,3 +2809,400 @@ CAMPO2: 5
 CAMPO3: false
 {"response":[{"CAMPO2":"1","CAMPO3":"true","CAMPO1":"a"},{"CAMPO2":"2","CAMPO3":"true","CAMPO1":"b"},{"CAMPO2":"3","CAMPO3":"false","CAMPO1":"c"},{"CAMPO2":"4","CAMPO3":"true","CAMPO1":"d"},{"CAMPO2":"5","CAMPO3":"false","CAMPO1":"e"}]}
 Éxito
+
+2019/05/17 14:38:56 GET TABLES
+Conexión exitosa a la bd: amarina_bd
+Éxito
+
+2019/05/17 14:42:14 GET TABLES
+Conexión exitosa a la bd: amarina_bd
+Éxito
+
+32019/05/17 14:42:16 CONSULT TABLE
+Conexión exitosa a la bd: amarina_bd
+Número de filas: 5
+Número de columnas: 3
+CAMPO1 1
+CAMPO2 2
+CAMPO3 3
+CAMPO1: a
+CAMPO2: 1
+CAMPO3: true
+CAMPO1: b
+CAMPO2: 2
+CAMPO3: true
+CAMPO1: c
+CAMPO2: 3
+CAMPO3: false
+CAMPO1: d
+CAMPO2: 4
+CAMPO3: true
+CAMPO1: e
+CAMPO2: 5
+CAMPO3: false
+{"response":[{"CAMPO2":"1","CAMPO3":"true","CAMPO1":"a"},{"CAMPO2":"2","CAMPO3":"true","CAMPO1":"b"},{"CAMPO2":"3","CAMPO3":"false","CAMPO1":"c"},{"CAMPO2":"4","CAMPO3":"true","CAMPO1":"d"},{"CAMPO2":"5","CAMPO3":"false","CAMPO1":"e"}]}
+Éxito
+
+2019/05/17 14:42:20 GET TABLES
+Conexión exitosa a la bd: amarina_bd
+Éxito
+
+32019/05/17 14:42:22 CONSULT TABLE
+Conexión exitosa a la bd: amarina_bd
+Número de filas: 5
+Número de columnas: 3
+CAMPO1 1
+CAMPO2 2
+CAMPO3 3
+CAMPO1: a
+CAMPO2: 1
+CAMPO3: true
+CAMPO1: b
+CAMPO2: 2
+CAMPO3: true
+CAMPO1: c
+CAMPO2: 3
+CAMPO3: false
+CAMPO1: d
+CAMPO2: 4
+CAMPO3: true
+CAMPO1: e
+CAMPO2: 5
+CAMPO3: false
+{"response":[{"CAMPO2":"1","CAMPO3":"true","CAMPO1":"a"},{"CAMPO2":"2","CAMPO3":"true","CAMPO1":"b"},{"CAMPO2":"3","CAMPO3":"false","CAMPO1":"c"},{"CAMPO2":"4","CAMPO3":"true","CAMPO1":"d"},{"CAMPO2":"5","CAMPO3":"false","CAMPO1":"e"}]}
+Éxito
+
+2019/05/17 14:42:23 GET TABLES
+Conexión exitosa a la bd: amarina_bd
+Éxito
+
+2019/05/17 14:42:24 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'amarina' AND TABLE_NAME = 'TABLA'
+Número de filas: 3
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: campo1
+TYPE: VARCHAR
+LENGTH: 20
+PRIMARYKEY: 1
+NAME: campo2
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+NAME: campo3
+TYPE: BOOLEAN
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/17 14:42:26 GET TABLES
+Conexión exitosa a la bd: amarina_bd
+Éxito
+
+2019/05/17 14:42:32 GET TABLES
+Conexión exitosa a la bd: amarina_bd
+Éxito
+
+32019/05/17 14:42:36 CONSULT TABLE
+Conexión exitosa a la bd: amarina_bd
+Número de filas: 5
+Número de columnas: 3
+CAMPO1 1
+CAMPO2 2
+CAMPO3 3
+CAMPO1: a
+CAMPO2: 1
+CAMPO3: true
+CAMPO1: b
+CAMPO2: 2
+CAMPO3: true
+CAMPO1: c
+CAMPO2: 3
+CAMPO3: false
+CAMPO1: d
+CAMPO2: 4
+CAMPO3: true
+CAMPO1: e
+CAMPO2: 5
+CAMPO3: false
+{"response":[{"CAMPO2":"1","CAMPO3":"true","CAMPO1":"a"},{"CAMPO2":"2","CAMPO3":"true","CAMPO1":"b"},{"CAMPO2":"3","CAMPO3":"false","CAMPO1":"c"},{"CAMPO2":"4","CAMPO3":"true","CAMPO1":"d"},{"CAMPO2":"5","CAMPO3":"false","CAMPO1":"e"}]}
+Éxito
+
+2019/05/17 14:49:54 GET TABLES
+Conexión exitosa a la bd: amarina_bd
+Éxito
+
+32019/05/17 14:49:55 CONSULT TABLE
+Conexión exitosa a la bd: amarina_bd
+Número de filas: 5
+Número de columnas: 3
+CAMPO1 1
+CAMPO2 2
+CAMPO3 3
+CAMPO1: a
+CAMPO2: 1
+CAMPO3: true
+CAMPO1: b
+CAMPO2: 2
+CAMPO3: true
+CAMPO1: c
+CAMPO2: 3
+CAMPO3: false
+CAMPO1: d
+CAMPO2: 4
+CAMPO3: true
+CAMPO1: e
+CAMPO2: 5
+CAMPO3: false
+{"response":[{"CAMPO2":"1","CAMPO3":"true","CAMPO1":"a"},{"CAMPO2":"2","CAMPO3":"true","CAMPO1":"b"},{"CAMPO2":"3","CAMPO3":"false","CAMPO1":"c"},{"CAMPO2":"4","CAMPO3":"true","CAMPO1":"d"},{"CAMPO2":"5","CAMPO3":"false","CAMPO1":"e"}]}
+Éxito
+
+2019/05/17 14:53:09 GET TABLES
+Conexión exitosa a la bd: usuario1_base1
+Éxito
+
+2019/05/17 14:53:37 CREATE TABLE
+usuario1tabla1campo1,VARCHAR,3,1;
+Base de datos: usuario1_base1
+Conexión exitosa
+Query: CREATE TABLE usuario1tabla1(usuario1tabla1campo1 VARCHAR(3) NOT NULL PRIMARY KEY)
+
+2019/05/17 14:53:40 GET TABLES
+Conexión exitosa a la bd: usuario1_base1
+Éxito
+
+2019/05/17 14:53:44 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'usuario1' AND TABLE_NAME = 'USUARIO1TABLA1'
+Número de filas: 1
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: usuario1tabla1campo1
+TYPE: VARCHAR
+LENGTH: 3
+PRIMARYKEY: 1
+Éxito
+
+2019/05/17 14:54:18 INSERT TABLE
+Conexión exitosa a la bd: usuario1_base1
+INSERT INTO USUARIO1TABLA1 VALUES('ua1')
+RESPUESTA: 1
+
+2019/05/17 14:54:23 GET TABLES
+Conexión exitosa a la bd: usuario1_base1
+Éxito
+
+32019/05/17 14:54:38 CONSULT TABLE
+Conexión exitosa a la bd: usuario1_base1
+Número de filas: 1
+Número de columnas: 1
+USUARIO1TABLA1CAMPO1 1
+USUARIO1TABLA1CAMPO1: ua1
+{"response":[{"USUARIO1TABLA1CAMPO1":"ua1"}]}
+Éxito
+
+2019/05/17 14:55:00 GET TABLES
+Conexión exitosa a la bd: usuario1_base1
+Éxito
+
+2019/05/17 14:55:20 GET TABLES
+Conexión exitosa a la bd: usuario2_base2
+Éxito
+
+2019/05/17 14:55:50 CREATE TABLE
+usuario2tabla1campo1,VARCHAR,20,1;
+Base de datos: usuario2_base2
+Conexión exitosa
+Query: CREATE TABLE usuario2tabla1(usuario2tabla1campo1 VARCHAR(20) NOT NULL PRIMARY KEY)
+
+2019/05/17 14:55:52 GET TABLES
+Conexión exitosa a la bd: usuario2_base2
+Éxito
+
+2019/05/17 14:56:29 CREATE TABLE
+usuario2tabla2campo1,VARCHAR,30,1;usuario2tabla2campo2,INT,null,0;
+Base de datos: usuario2_base2
+Conexión exitosa
+Query: CREATE TABLE usuario2tabla2(usuario2tabla2campo1 VARCHAR(30) NOT NULL PRIMARY KEY,usuario2tabla2campo2 INT)
+
+2019/05/17 14:56:32 GET TABLES
+Conexión exitosa a la bd: usuario2_base2
+Éxito
+
+2019/05/17 14:56:48 GET TABLES
+Conexión exitosa a la bd: usuario1_base1
+Éxito
+
+2019/05/17 14:57:03 GET TABLES
+Conexión exitosa a la bd: usuario2_base2
+Éxito
+
+2019/05/17 14:57:07 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'usuario2' AND TABLE_NAME = 'USUARIO2TABLA2'
+Número de filas: 2
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: usuario2tabla2campo1
+TYPE: VARCHAR
+LENGTH: 30
+PRIMARYKEY: 1
+NAME: usuario2tabla2campo2
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/17 14:57:16 INSERT TABLE
+Conexión exitosa a la bd: usuario2_base2
+INSERT INTO USUARIO2TABLA2 VALUES('abc',2)
+RESPUESTA: 1
+
+2019/05/17 14:57:25 INSERT TABLE
+Conexión exitosa a la bd: usuario2_base2
+INSERT INTO USUARIO2TABLA2 VALUES('abcd',3)
+RESPUESTA: 1
+
+2019/05/17 14:57:27 GET TABLES
+Conexión exitosa a la bd: usuario2_base2
+Éxito
+
+32019/05/17 14:57:34 CONSULT TABLE
+Conexión exitosa a la bd: usuario2_base2
+Número de filas: 2
+Número de columnas: 2
+USUARIO2TABLA2CAMPO1 1
+USUARIO2TABLA2CAMPO2 2
+USUARIO2TABLA2CAMPO1: abc
+USUARIO2TABLA2CAMPO2: 2
+USUARIO2TABLA2CAMPO1: abcd
+USUARIO2TABLA2CAMPO2: 3
+{"response":[{"USUARIO2TABLA2CAMPO1":"abc","USUARIO2TABLA2CAMPO2":"2"},{"USUARIO2TABLA2CAMPO1":"abcd","USUARIO2TABLA2CAMPO2":"3"}]}
+Éxito
+
+2019/05/17 14:58:27 GET TABLES
+Conexión exitosa a la bd: usuario2_base2
+Éxito
+
+2019/05/17 14:58:38 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'usuario2' AND TABLE_NAME = 'USUARIO2TABLA2'
+Número de filas: 2
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: usuario2tabla2campo1
+TYPE: VARCHAR
+LENGTH: 30
+PRIMARYKEY: 1
+NAME: usuario2tabla2campo2
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/17 14:58:49 UPDATE TABLE
+Conexión exitosa a la bd: usuario2_base2
+UPDATE USUARIO2TABLA2 SET usuario2tabla2campo2 = 10 WHERE usuario2tabla2campo1 = 'abc'
+RESPUESTA: 1
+
+2019/05/17 14:58:52 GET TABLES
+Conexión exitosa a la bd: usuario2_base2
+Éxito
+
+32019/05/17 14:58:55 CONSULT TABLE
+Conexión exitosa a la bd: usuario2_base2
+Número de filas: 2
+Número de columnas: 2
+USUARIO2TABLA2CAMPO1 1
+USUARIO2TABLA2CAMPO2 2
+USUARIO2TABLA2CAMPO1: abc
+USUARIO2TABLA2CAMPO2: 10
+USUARIO2TABLA2CAMPO1: abcd
+USUARIO2TABLA2CAMPO2: 3
+{"response":[{"USUARIO2TABLA2CAMPO1":"abc","USUARIO2TABLA2CAMPO2":"10"},{"USUARIO2TABLA2CAMPO1":"abcd","USUARIO2TABLA2CAMPO2":"3"}]}
+Éxito
+
+2019/05/17 14:59:01 GET TABLES
+Conexión exitosa a la bd: usuario2_base2
+Éxito
+
+2019/05/17 14:59:03 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'usuario2' AND TABLE_NAME = 'USUARIO2TABLA1'
+Número de filas: 1
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: usuario2tabla1campo1
+TYPE: VARCHAR
+LENGTH: 20
+PRIMARYKEY: 1
+Éxito
+
+2019/05/17 14:59:06 GET TABLES
+Conexión exitosa a la bd: usuario2_base2
+Éxito
+
+32019/05/17 14:59:09 CONSULT TABLE
+Conexión exitosa a la bd: usuario2_base2
+Número de filas: 0
+Número de columnas: 1
+Return null
+{"response":"No tienes datos todavia."}
+Éxito
+
+2019/05/17 14:59:17 GET TABLES
+Conexión exitosa a la bd: usuario2_base2
+Éxito
+
+2019/05/17 14:59:19 GET FIELDS
+SELECT NAME, TYPE, LENGTH, PRIMARYKEY FROM FIELDS WHERE USERNAME = 'usuario2' AND TABLE_NAME = 'USUARIO2TABLA2'
+Número de filas: 2
+Número de columnas: 4
+NAME 1
+TYPE 2
+LENGTH 3
+PRIMARYKEY 4
+NAME: usuario2tabla2campo1
+TYPE: VARCHAR
+LENGTH: 30
+PRIMARYKEY: 1
+NAME: usuario2tabla2campo2
+TYPE: INT
+LENGTH: null
+PRIMARYKEY: 0
+Éxito
+
+2019/05/17 14:59:26 DELETE FROM TABLE
+Conexión exitosa a la bd: usuario2_base2
+DELETE FROM USUARIO2TABLA2 WHERE usuario2tabla2campo1='abc'
+RESPUESTA: 1
+
+2019/05/17 14:59:27 GET TABLES
+Conexión exitosa a la bd: usuario2_base2
+Éxito
+
+32019/05/17 14:59:30 CONSULT TABLE
+Conexión exitosa a la bd: usuario2_base2
+Número de filas: 1
+Número de columnas: 2
+USUARIO2TABLA2CAMPO1 1
+USUARIO2TABLA2CAMPO2 2
+USUARIO2TABLA2CAMPO1: abcd
+USUARIO2TABLA2CAMPO2: 3
+{"response":[{"USUARIO2TABLA2CAMPO1":"abcd","USUARIO2TABLA2CAMPO2":"3"}]}
+Éxito
+
+2019/05/17 14:59:36 GET TABLES
+Conexión exitosa a la bd: usuario2_base2
+Éxito

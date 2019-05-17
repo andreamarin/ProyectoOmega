@@ -9,7 +9,7 @@ También está un archivo _.jar_ que contiene la librería de JSON que se utiliz
 
 ## Desplegar aplicación
 
-Para ejecutar el proyecto hay que abrirlo en NetBeans, hacer un _clean and build_ y después _deploy_.
+Para ejecutar el proyecto hay que abrirlo en NetBeans, hacer un _clean and build_ y después _deploy_. Posteriormente se da click en el botón _run_ para desplegar la página principal de la aplicación.
 
 ## Manual de usuario
 
